@@ -1,21 +1,21 @@
-<aside id="left-panel" class="left-panel">
+<aside id="left-panel" class="left-panel white-text">
         <nav class="navbar navbar-expand-sm navbar-default">
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                 <img class="img-fluid" src="" alt=""> <i class="fa fa-user fa-3x" aria-hidden="true"></i>
-                <label for="loggedUser" class="blue-text"> El Turnstone</label>
+                <label for="loggedUser" class="yellow-text"> Azahub Username</label>
                 
 
-                <table class="table">
+                <table class="table" style="background-color: slategray">
                     <tbody>
 
                         <tr>
                        <td><li class="active">
-                        <a href="#" class="cyan-text"><i class="menu-icon fa fa-laptop"></i>Dashboard </a></li>
+                        <a href="#" class="white-text"><i class="menu-icon fa fa-laptop"></i>Dashboard </a></li>
                        </td>
                         <tr>
                             <td><li class="menu-item-has-children dropdown " >
-                        <a href="#" class="dropdown-toggle cyan-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-book    "></i> Manage Books</a>
+                        <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-book    "></i> Manage Books</a>
                         <ul class="sub-menu children dropdown-menu">
                             <a href="#" class="blue-text"><li> <i class="fas fa-book-reader    "></i> Add Books</a></li>
 
@@ -31,9 +31,9 @@
 
                         <tr>
                             <td>   <li class="menu-item-has-children dropdown " >
-                        <a href="#" class="dropdown-toggle cyan-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-money-bill    "></i> Manage Fines</a>
+                        <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-money-bill    "></i> Manage Fines</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <a href="#" class="blue-text"><li> <i class="fas fa-money-bill-alt    "></i> Unpaid Fines</a></li>
+                            <a href="#" class="blue-text"><li> <i class="fas fa-money-bill-alt "></i> Unpaid Fines</a></li>
                        
                            <a href="#">  <li> <i class="fas fa-money-bill-wave    "></i> Paid Fines</a></li>
                         </ul>
@@ -44,21 +44,21 @@
 
                         <tr>
                             <td> <li class="active">
-                        <a href="#" class="cyan-text"> <i class="fa fa-address-book" aria-hidden="true"></i> Issue Books</a>
+                        <a href="#" class="white-text"> <i class="fa fa-address-book" aria-hidden="true"></i> Issue Books</a>
                     </li></td>
                     
                         </tr>
 
                         <tr>
                             <td> <li class="active">
-                        <a href="#" class="cyan-text"><i class="fa fa-address-book" aria-hidden="true"></i>View all Issued Books</a>
+                        <a href="#" class="white-text"><i class="fa fa-address-book" aria-hidden="true"></i>View all Issued Books</a>
                     </li></td>
                     
                         </tr>
 
                         <tr>
                             <td> <li class="active">
-                        <a href="#" class="cyan-text"> <i class="fa fa-cart-plus" aria-hidden="true"></i> View Bookings </a>
+                        <a href="#" class="white-text"> <i class="fa fa-cart-plus" aria-hidden="true"></i> View Bookings </a>
                     </li></td>
                     
                         </tr>
@@ -66,7 +66,7 @@
 
                         <tr>
                             <td>   <li class="menu-item-has-children dropdown " >
-                        <a href="#" class="dropdown-toggle cyan-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-users-cog    "></i> Manage Students</a>
+                        <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-users-cog    "></i> Manage Students</a>
                         <ul class="sub-menu children dropdown-menu">
                             <a href="add-category.php" class="blue-text"><li> <i class="fas fa-user-plus    "></i> Add Student</a></li>
                        
@@ -80,7 +80,7 @@
                         <tr>
                             <td>
                             <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle cyan-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cogs" aria-hidden="true"></i> Settings</a>
+                        <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cogs" aria-hidden="true"></i> Settings</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><a href="manage-incomingvehicle.php"> <i class="fa fa-cog" aria-hidden="true"></i> Manage Courses</a></li>
                             <li><a href="manage-outgoingvehicle.php"> <i class="fa fa-cog" aria-hidden="true"></i>Manage Years</a>

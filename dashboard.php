@@ -12,12 +12,12 @@
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
 
+<link rel="stylesheet" href="css/style.css">
   <!--custom fonts-->
   <style>
     @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
   </style>
 
-  <link rel="stylesheet" href="css/style.csss">
 
   <style>
     @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
@@ -40,7 +40,7 @@
 
 </head>
 
-<body class="body">
+<body style="background-color: slategray">
 
 
   <!--Navbar -->
@@ -71,7 +71,7 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-2" style="background-image: url('img/room.webp')">
 
         <?php include_once('sidebar.php') ?>
       </div>
