@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,8 +74,8 @@
 
 
     <div class="row">
-      <div class="col-md-2">
-
+      <div class="col-md-2" style="background-image: url('img/room.webp')">
+     
         <?php include_once('sidebar.php') ?>
       </div>
 
@@ -82,27 +83,25 @@
       <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Manage Students</a></li>
-        <li class="breadcrumb-item"><a href="#">Add Student</a></li>
+        <li class="breadcrumb-item"><a href="add_student.php">Add Student</a></li>
     </ol>
  </nav>
             <!--form for add students-->
-            <form action="" method="post">
-                     
+            <form action="insert_student.php" method="post">
              <div class="row">
-                 
                  <div class="col-sm-4">
                  <div class="form-group">
-                   <label for=""> <i class="fas fa-id-card    "></i> Student ID Number </label>
+                   <label for=""> <i class="fas fa-id-card  fa-2x   "></i> Student ID Number </label>
                        <input type="number" name="studentid" id="" class="form-control" placeholder="Student ID" aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
-                   <label for=""> <i class="fas fa-user-plus    "></i> Firstname</label>
+                   <label for=""> <i class="fas fa-user-plus  fa-2x  "></i> Firstname</label>
                        <input type="text" name="firstname" id="" class="form-control" placeholder="Firstname" aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
-                   <label for=""> <i class="fa fa-user-plus" aria-hidden="true"></i> Lastname</label>
+                   <label for=""> <i class="fa fa-user-plus fa-2x" aria-hidden="true"></i> Lastname</label>
                        <input type="text" name="lastname" id="" class="form-control" placeholder="Lastname" aria-describedby="helpId">  
                      </div>
 
@@ -120,28 +119,28 @@
                  <div class="col-sm-4">
                  <div class="form-group">
                     <label for=""> <i class="fas fa-sticky-note    "></i> Course Name</label>
-                       <input type="text" name="course" id="" class="form-control" placeholder="Course name" aria-describedby="helpId">  
+                       <input type="text" name="course_name" id="" class="form-control" placeholder="Course name" aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
                          <label for="my-select"> <i class="fas fa-calendar-alt   "></i> Year</label>
                          <select id="my-select" class="custom-select" name="year">
-                             <option>1st Year</option>
-                             <option>2nd Year</option>
-                             <option>3rd Year</option>
-                             <option>4th Year</option>
-                             <option>5th Year</option>
-                             <option>6th Year</option>
+                             <option value="First Year">1st Year</option>
+                             <option value="Second Year">2nd Year</option>
+                             <option value="Third Year">3rd Year</option>
+                             <option value="Forth Year">4th Year</option>
+                             <option value="Fifth Year">5th Year</option>
+                             <option value="Sixth Year">6th Year</option>
                          </select>
                      </div>
 
                      <div class="form-group">
                     <label for=""> <i class="fas fa-phone-square    "></i> Phone Number</label>
-                       <input type="number" name="phoneno" id="" class="form-control" placeholder="Phone No." aria-describedby="helpId">  
+                       <input type="number" name="phone_no" id="" class="form-control" placeholder="Phone No." aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
-                    <label for=""> <i class="fas fa-map-marker-alt    "></i> Address</label>
+                    <label for=""> <i class="fas fa-map-marker-alt  "></i> Address</label>
                        <input type="text" name="address" id="" class="form-control" placeholder="Address" aria-describedby="helpId">  
                      </div>
 
@@ -151,51 +150,51 @@
                 
                  <div class="form-group">
                      <label for="my-select"> <i class="fas fa-sticky-note    "></i> Department</label>
-                     <select id="my-select" class="custom-select" name="">
-                         <option>Centre for Pedagogy & Andragogy</option>
-                         <option>Agricultural Economics</option>
+                     <select id="my-select" class="custom-select" name="department">
+                         <option value="Centre for Pedagogy & Andragogy">Centre for Pedagogy & Andragogy</option>
+                         <option value="Agricultural Economics">Agricultural Economics</option>
                          
-                         <option> Medical Microbiology</option>
-                         <option> Pharmacology and Pharmacognosy</option>
+                         <option value="Medical Microbiology"> Medical Microbiology</option>
+                         <option value="Pharmacology and Pharmacognosy"> Pharmacology and Pharmacognosy</option>
 
-                         <option> Obstetrics & Gynaecology</option>
-                         <option>Diagnostic Imaging & Radiation Medicine </option>
+                         <option value="Obstetrics & Gynaecology"> Obstetrics & Gynaecology</option>
+                         <option value="Diagnostic Imaging & Radiation Medicine">Diagnostic Imaging & Radiation Medicine </option>
 
-                         <option> Clinical Medicine and Therapeutics</option>
-                         <option> Institute of Tropical & Infectious Diseases</option>
+                         <option value=""> Clinical Medicine and Therapeutics</option>
+                         <option value=""> Institute of Tropical & Infectious Diseases</option>
 
-                         <option>Periodontology/Community and Preventive Dentistry </option>
-                         <option> Education Communication and Technology</option>
+                         <option value="">Periodontology/Community and Preventive Dentistry </option>
+                         <option value=""> Education Communication and Technology</option>
 
-                         <option>Civil and Construction Engineering</option>
-                         <option>Electrical and Information Engineering </option>
+                         <option value="">Civil and Construction Engineering</option>
+                         <option value="">Electrical and Information Engineering </option>
 
-                         <option> School of Mathematics</option>
-                         <option>School of Computing and Informatics </option>
+                         <option value=""> School of Mathematics</option>
+                         <option value="">School of Computing and Informatics </option>
 
-                         <option> Urban and Regional Planning</option>
-                         <option>Real Estate and Construction Management </option>
+                         <option value=""> Urban and Regional Planning</option>
+                         <option value="">Real Estate and Construction Management </option>
 
-                         <option>Architecture and Building Science </option>
-                         <option>Nuclear Science & Technology </option>
+                         <option value="">Architecture and Building Science </option>
+                         <option value="">Nuclear Science & Technology </option>
 
-                         <option> Geospatial and Space Technology</option>
-                         <option> Mechanical and Manufacturing Engineering</option>
+                         <option value=""> Geospatial and Space Technology</option>
+                         <option value=""> Mechanical and Manufacturing Engineering</option>
 
-                         <option> School of Biological Sciences</option>
-                         <option>Centre for Biotechnology & Bioinformatics </option>
+                         <option value=""> School of Biological Sciences</option>
+                         <option value="">Centre for Biotechnology & Bioinformatics </option>
 
-                         <option> Veterinary Pathology, Microbiology & Parasitology</option>
-                         <option>Vet. Anatomy and Physiology </option>
+                         <option value=""> Veterinary Pathology, Microbiology & Parasitology</option>
+                         <option value="">Vet. Anatomy and Physiology </option>
 
-                         <option>Animal Production </option>
-                         <option> The Center for Sustainable Dryland Ecosystems and Societies</option>
+                         <option value="">Animal Production </option>
+                         <option value=""> The Center for Sustainable Dryland Ecosystems and Societies</option>
 
-                         <option> Plant Science and Crop Protection</option>
-                         <option>Land Resource Management & Agricultural Technology </option>
+                         <option value=""> Plant Science and Crop Protection</option>
+                         <option value="">Land Resource Management & Agricultural Technology </option>
 
-                         <option>Food Science, Nutrition and Technology </option>
-                         <option> Field Station</option>
+                         <option value="">Food Science, Nutrition and Technology </option>
+                         <option value=""> Field Station</option>
 
                      </select>
                  </div>
@@ -207,33 +206,33 @@
 
                      <div class="form-group">
                     <label for=""> <i class="fa fa-map-pin" aria-hidden="true"></i> State</label>
-                       <input type="text" name="state" id="" class="form-control" placeholder="State" aria-describedby="helpId">  
+                    <input type="text" name="state_name" id="" class="form-control" placeholder="State" aria-describedby="helpId">  
                      </div>
                        
-                     <label for=""> <i class="fas fa-users    "></i> Select Gender</label>
+                     <label for=""> <i class="fas fa-users "></i> Select Gender</label>
                      <div class="form-check">
                          <label class="form-check-label">
-                         <input type="radio" class="form-check-input" name="gender" id="" value="checkedValue" checked>
-                       <i class="fas fa-male    "></i>  Male
+                         <input type="radio" class="form-check-input" name="gender" id="" value="male" checked="checked">
+                       <i class="fas fa-male  "></i>  Male
                        </label>
                      </div>
 
                      <div class="form-check">
                          <label class="form-check-label">
-                         <input type="radio" class="form-check-input" name="gender" id="" value="checkedValue" checked>
-                     <i class="fas fa-female    "></i>    Female
+                         <input type="radio" class="form-check-input" name="gender" id="" checked="checked" value="female">
+                     <i class="fas fa-female"></i>    Female
                        </label>
                      </div>
 
 
                  </div>
+                 <button type="submit" name="submit" class="btn rounded-pill btn-outline-warning ">Add Student</button>
 
+</form>
                  
              </div>
               
-            <button type="submit" name="submit" class="btn rounded-pill btn-outline-warning ">Add Student</button>
-
-             </form>
+            
       </div>
 
     </div>

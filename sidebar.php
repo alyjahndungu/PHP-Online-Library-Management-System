@@ -18,10 +18,9 @@
                         <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-book    "></i> Manage Books</a>
                         <ul class="sub-menu children dropdown-menu">
                             <a href="#" class="blue-text"><li> <i class="fas fa-book-reader    "></i> Add Books</a></li>
-
                             <a href="#" class="blue-text"><li> <i class="fas fa-book-reader    "></i> Returned Books</a></li>
-
                             <a href="#" class="blue-text"><li> <i class="fas fa-book-reader    "></i> Not Returned</a></li>
+                            <a href="#" class="blue-text"><li> <i class="fas fa-book-reader    "></i>View All Books</a></li>
     </ul>   
                     </li>
                 </td>
@@ -51,7 +50,7 @@
 
                         <tr>
                             <td> <li class="active">
-                        <a href="#" class="white-text"><i class="fa fa-address-book" aria-hidden="true"></i>View all Issued Books</a>
+                        <a href="#" class="white-text"><i class="fa fa-address-book" aria-hidden="true"></i>View All Books</a>
                     </li></td>
                     
                         </tr>
@@ -68,9 +67,9 @@
                             <td>   <li class="menu-item-has-children dropdown " >
                         <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-users-cog    "></i> Manage Students</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <a href="add-category.php" class="blue-text"><li> <i class="fas fa-user-plus    "></i> Add Student</a></li>
+                            <a href="add_student.php" class="blue-text"><li> <i class="fas fa-user-plus    "></i> Add Student</a></li>
                        
-                           <a href="manage-category.php">  <li> <i class="fas fa-users    "></i> View all Students</a></li>
+                           <a href="view_all_students.php">  <li> <i class="fas fa-users    "></i> View all Students</a></li>
                         </ul>
                     </li>
                 </td>

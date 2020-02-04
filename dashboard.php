@@ -19,10 +19,6 @@
   </style>
 
 
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
-  </style>
-
   <!-- JQuery -->
 
 
@@ -54,7 +50,7 @@
          <ul class="navbar-nav ml-auto nav-flex-icons">
          <li class="nav-item dropdown">
          <a class="nav-link dropdown-toggle blue-text" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fas fa-user blue-text" display-5></i> Manage Account
+         <i class="fas fa-user white-text" display-5></i> <span class="white-text">Manage Account</span>
           </a>
           <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
             <a class="dropdown-item text-primary" href="#"> <i class="fa fa-user" aria-hidden="true"></i> My Profile</a></a>
