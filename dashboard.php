@@ -29,7 +29,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
-
+<main></main>
   <title>AZAHUB - OLibrary System</title>
   </title>
 
@@ -78,19 +78,17 @@
 
           <div class="col-sm-3">
             <div class="card wow fadeInLeft">
-              <i class="fa fa-address-book brown-text text-center fa-8x" aria-hidden="true"></i>
+              <i class="fa fa-address-book brown-text text-center fa-4x" aria-hidden="true"></i>
               <div class="card-body">
                 <h4 class="card-title"><a>22</a></h4>
                 <p class="card-text">Today's issued Books</p>
-
               </div>
             </div>
           </div>
-
-
+          
           <div class="col-sm-3">
             <div class="card wow fadeInUp">
-              <i class="fas fa-book yellow-text text-center fa-8x"></i>
+              <i class="fas fa-book yellow-text text-center fa-4x"></i>
               <div class="card-body">
                 <h4 class="card-title"><a>59</a></h4>
                 <p class="card-text">Returned Books</p>
@@ -102,7 +100,7 @@
 
           <div class="col-sm-3">
             <div class="card wow fadeInRight">
-              <i class="fas fa-book blue-text text-center fa-8x"></i>
+              <i class="fas fa-book blue-text text-center fa-4x"></i>
               <div class="card-body">
                 <h4 class="card-title"><a>203</a></h4>
                 <p class="card-text">Not Returned Books</p>
@@ -115,7 +113,7 @@
 
           <div class="col-sm-3">
             <div class="card wow fadeInLeft">
-              <i class="fas fa-book red-text text-center fa-8x"></i>
+              <i class="fas fa-book red-text text-center fa-4x"></i>
               <div class="card-body">
                 <h4 class="card-title"><a>1,223</a></h4>
                 <p class="card-text">Total Books</p>
@@ -126,13 +124,14 @@
         </div>
         <hr>
         <div class="row">
-          <div class="col-md-3"></div>
-
-          <div class="col-md-6">
+          <div class="col-md-1"></div>
+      
+          <div class="col-md-8">
             <!--Pie chart for the details-->
             <div class="card wow bounceInUp">
               <div class="card-body">
-                <canvas id="doughnutChart"></canvas>
+                <!--<canvas id="doughnutChart"></canvas>-->
+                <canvas id="lineChart"></canvas>
               </div>
             </div>
 
@@ -140,8 +139,18 @@
 
           </div>
 
-          <div class="col-md-3"></div>
+          <div class="col-md-3">
+          <canvas id="barChart"></canvas>
+          </div>
         </div>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+
+  </div>
+  <div class="col-md-2"></div>
+</div>
+
 
       </div>
 
@@ -152,6 +161,7 @@
   <?php include_once('footer.php'); ?>
   <script>
     //doughnut
+    /* 
     var ctxD = document.getElementById("doughnutChart").getContext('2d');
     var myLineChart = new Chart(ctxD, {
       type: 'doughnut',
@@ -167,7 +177,45 @@
         responsive: true
       }
     });
+    */
     //wow amination
+
+//line
+var ctxL = document.getElementById("lineChart").getContext('2d');
+var myLineChart = new Chart(ctxL, {
+type: 'line',
+data: {
+labels: ["January", "February", "March", "April", "May", "June", "July", "August" , "September" , "Octomber"],
+datasets: [{
+label: "My First dataset",
+data: [65, 59, 80, 81, 56, 55, 65, 75, 66, 54, 55,43],
+backgroundColor: [
+'rgba(105, 0, 132, .2)',
+],
+borderColor: [
+'rgba(200, 99, 132, .7)',
+],
+borderWidth: 2
+},
+{
+label: "My Second dataset",
+data: [28, 48, 40, 19, 86, 27, 90, 78, 77, 88, 54, 70],
+backgroundColor: [
+'rgba(0, 137, 132, .2)',
+],
+borderColor: [
+'rgba(0, 10, 130, .7)',
+],
+borderWidth: 2
+}
+]
+},
+options: {
+responsive: true
+}
+});
+
+
 
     new WOW().init();
 

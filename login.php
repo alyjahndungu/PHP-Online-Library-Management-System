@@ -1,35 +1,3 @@
-<?php
-/*
-session_start();
-error_reporting(E_ALL ^ E_WARNING);
-require_once "dbconnect.php";
-if(isset($_POST['login']))
-{
-$username = trim($_POST['_username']);
-$password = trim($_POST['_password']);
-$query = "SELECT `username`, `password` FROM `users` WHERE `username`='$username' 
-AND `password`='$password'";
-
-$result = mysqli_query($conn,$query);
-$num_row = mysqli_num_rows($result);
-$row=mysqli_fetch_array($result);
-if( $num_row ==1 )
-     {
- $_SESSION['id']=$row['id'];
- header("Location: index.php");
-        $message = "Welcome" .$username;
-        echo "<script type='text/javascript'>alert('$message');</script>";
- exit;
-  }
-  else
-     {
-        $message = "Wrong Username or password...Try Again!!!";
-        echo "<script type='text/javascript'>alert('$message');</script>";
-  }
- }
- */
-?>
-
 
 
 <?php

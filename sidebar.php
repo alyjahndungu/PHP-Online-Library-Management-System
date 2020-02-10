@@ -4,8 +4,6 @@
                 <ul class="nav navbar-nav">
                 <img class="img-fluid" src="" alt=""> <i class="fa fa-user fa-3x" aria-hidden="true"></i>
                 <label for="loggedUser" class="yellow-text"> Azahub Username</label>
-                
-
                 <table class="table" style="background-color: slategray">
                     <tbody>
 
