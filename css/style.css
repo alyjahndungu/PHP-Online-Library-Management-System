@@ -1,4 +1,9 @@
 
     body{
-    background-color: slategray;
+    background-color: rgb(39, 4, 28);
+    }
+
+    .row.left_col{
+        background-color: rgb(27, 95, 163);
+
     }

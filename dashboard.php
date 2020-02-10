@@ -167,8 +167,6 @@
         responsive: true
       }
     });
-
-
     //wow amination
 
     new WOW().init();
