@@ -7,13 +7,13 @@ if(isset($_POST['_username']))
     $UserName = mysqli_real_escape_string($conn, $UserName);
     $Password = stripslashes($_REQUEST['_password']);
     $Password = mysqli_real_escape_string($conn, $Password);
-    $query = "SELECT * FROM `uaccounts` WHERE `username`='$UserName' AND `password`='".md5($Password)."'";
+    $query = "SELECT * FROM `accounts` WHERE `username`='$UserName' AND `password`='".md5($Password)."'";
     $result = mysqli_query($conn,$query);
     $rows = mysqli_num_rows($result);
 if( $rows ==1 )
      {
  $_SESSION['_username']=$row['username'];
- header("Location: index.php");
+ header("Location: dashboard.php");
  exit;
   }
   else
@@ -44,18 +44,6 @@ if( $rows ==1 )
     <style>
         @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
     </style>
-
-    <!-- JQuery -->
-
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
-
     <title>RAMA - HR MANAGEMENT SYSTEM</title>
     </title>
 </head>
@@ -116,18 +104,20 @@ if( $rows ==1 )
             <div class="col-sm-4"></div>
         </div>
     </div>
-
-    <body>
-
-    </body>
     <script>
         //wow amination
-
         new WOW().init();
-
         //slide
         $(document).foundation();
     </script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
 
 </body>
 
