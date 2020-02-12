@@ -17,12 +17,11 @@ if (isset($_POST['register'])) {
         echo "<script type='text/javascript'>alert('$message');</script>";
       }else{
        $password = md5($password);
-       $query = "INSERT INTO `accounts` (`firstname`,`lastname`,`username`,`email`,`password`,`phone`)
+       $query = "INSERT INTO `accounts` (`id`,`firstname`,`lastname`,`username`,`email`,`password`,`phone`)
        VALUES('$fname', '$lname','$user_name', '$email', '$password', '$phone')";
        mysqli_query($conn, $query);
        $_SESSION['success'] = "Succesifully Added" .mysqli_error($conn);
        header('location: login.php');
-  
     }
 }
 ?>
@@ -63,37 +62,36 @@ if (isset($_POST['register'])) {
           <div class="row">
           <div class="col-sm-4"></div>
           <div class="col-sm-4">
-               
 <!-- Default form register -->
-<form class="text-center border border-warning p-5 wow fadeInUp" method="post" action="register.php">
-<div class="form-row mb-4">
-    <div class="col">
-    <!-- First name -->
-    <input type="text" id="defaultRegisterFormFirstName" name="fname" class="form-control text-center pink-text rounded-pill" placeholder="First name">
-    </div>
-    <div class="col">
-        <!-- Last name -->
-    <input type="text" id="defaultRegisterFormLastName" name="lname" class="form-control text-center pink-text rounded-pill" placeholder="Last name">
-    </div>
-    </div>
-    <div class="form-group">
-    <input type="text" name="user_name" id="" class="form-control text-center pink-text rounded-pill" placeholder="Username" aria-describedby="helpId">
-    </div>
-    <!-- E-mail -->
-    <input type="email" id="defaultRegisterFormEmail" name="user_email" class="form-control mb-4 text-center pink-text rounded-pill" placeholder="E-mail">
-    <!-- Password -->
-    <input type="password" id="defaultRegisterFormPassword" name="password" class="form-control text-center pink-text rounded-pill" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted text-warning mb-4">
-        At least 8 characters and 1 digit
-    </small>
-<!-- Phone number -->
-<input type="text" id="defaultRegisterPhonePassword" name="phone_no" class="form-control text-center pink-text rounded-pill" maxlength="13" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-<small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-warning  text-muted mb-4">
-    Optional - for two step authentication
-</small>
-<!-- Sign up button -->
-<button class="btn  my-4 btn-block btn-outline-purple rounded-pill wow shake" name="register" type="submit">Sign Up</button>
-<p>Already Registered??</p> <a href="login.php" class="text-warning">Sign in here</a>
+<form class="text-center border border-warning p-5 wow fadeIn" method="post" action="register.php">
+        <div class="form-row mb-4">
+        <div class="col">
+        <!-- First name -->
+        <input type="text" id="defaultRegisterFormFirstName" name="fname" class="form-control text-center pink-text rounded-pill" placeholder="First name">
+        </div>
+        <div class="col">
+            <!-- Last name -->
+        <input type="text" id="defaultRegisterFormLastName" name="lname" class="form-control text-center pink-text rounded-pill" placeholder="Last name">
+        </div>
+        </div>
+        <div class="form-group">
+        <input type="text" name="user_name" id="" class="form-control text-center pink-text rounded-pill" placeholder="Username" aria-describedby="helpId">
+        </div>
+        <!-- E-mail -->
+        <input type="email" id="defaultRegisterFormEmail" name="user_email" class="form-control mb-4 text-center pink-text rounded-pill" placeholder="E-mail">
+        <!-- Password -->
+        <input type="password" id="defaultRegisterFormPassword" name="password" class="form-control text-center pink-text rounded-pill" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+        <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted text-warning mb-4">
+            At least 8 characters and 1 digit
+        </small>
+        <!-- Phone number -->
+        <input type="text" id="defaultRegisterPhonePassword" name="phone_no" class="form-control text-center pink-text rounded-pill" maxlength="13" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+        <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-warning  text-muted mb-4">
+            Optional - for two step authentication
+        </small>
+        <!-- Sign up button -->
+        <button class="btn  my-4 btn-block btn-outline-purple rounded-pill wow shake" name="register" type="submit">Sign Up</button>
+        <p>Already Registered??</p> <a href="login.php" class="text-warning">Sign in here</a>
 
 <!-- Social register -->
 <!--
@@ -106,11 +104,10 @@ if (isset($_POST['register'])) {
 <hr>
 </form>
 <!-- Default form register -->
-              </div>
-              <div class="col-sm-4"></div>
-              </div>
-              </div>
-</body>
+        </div>
+        <div class="col-sm-4"></div>
+        </div>
+        </div>
   <script>
     //wow amination
     new WOW().init();

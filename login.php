@@ -44,7 +44,7 @@ if( $rows ==1 )
     <style>
         @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
     </style>
-    <title>RAMA - HR MANAGEMENT SYSTEM</title>
+    <title>O-Library Login</title>
     </title>
 </head>
 
@@ -54,7 +54,7 @@ if( $rows ==1 )
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <hr>
-                <h1 class="text-center white-text"><strong>TRUA - H.R.M SYSTEM</strong> </h1>
+                <h1 class="text-center white-text"><strong>Azahub O-Library System</strong></strong> </h1>
             </div>
             <div class="col-sm-4"></div>
         </div>
@@ -65,7 +65,7 @@ if( $rows ==1 )
                 <!-- Default form login -->
                 <form class="text-center border border-warning p-5 wow rotateIn" method="post" action="login.php">
 
-                    <p class="h4 mb-4 cyan-text stext-uppercase">Sign in</p>
+                    <p class="h4 mb-4 cyan-text text-uppercase">Sign in</p>
                     <hr>
                     <div class="form-group">
                          <input type="text" name="_username" id=""  class="form-control my-4 rounded-pill text-center" placeholder=" Username" aria-describedby="helpId">
@@ -97,8 +97,6 @@ if( $rows ==1 )
 
                 </form>
                 <!-- Default form login -->
-
-
             </div>
 
             <div class="col-sm-4"></div>
