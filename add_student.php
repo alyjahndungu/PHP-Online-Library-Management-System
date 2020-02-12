@@ -41,9 +41,7 @@
 
 </head>
 
-<body style="background-color:slategray">;
-
-
+<body style="background-color:slategray">
   <!--Navbar -->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark ">
     <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="100rem" width="80rem" alt=""> O-Library System
@@ -54,8 +52,8 @@
     <div class="collapse navbar-collapse " id="navbarSupportedContent-333">
          <ul class="navbar-nav ml-auto nav-flex-icons">
          <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle blue-text" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fas fa-user blue-text" display-5></i> Manage Account
+         <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <i class="fas fa-user text-white" display-5></i> Manage Account
           </a>
           <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
             <a class="dropdown-item text-primary" href="#"> <i class="fa fa-user" aria-hidden="true"></i> My Profile</a></a>
@@ -87,43 +85,43 @@
     </ol>
  </nav>
             <!--form for add students-->
-            <form action="insert_student.php" method="post">
+            <form action="insert_student.php" method="post"  p-5 class="wow shake">
              <div class="row">
                  <div class="col-sm-4">
                  <div class="form-group">
-                   <label for=""> <i class="fas fa-id-card  fa-2x   "></i> Student ID Number </label>
+                   <label for="" class="text-white"> <i class="fas fa-id-card "></i> Student ID Number </label>
                        <input type="number" name="studentid" id="" class="form-control" placeholder="Student ID" aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
-                   <label for=""> <i class="fas fa-user-plus  fa-2x  "></i> Firstname</label>
+                   <label for="" class="text-white"> <i class="fas fa-user-plus  fa-2x  "></i> Firstname</label>
                        <input type="text" name="firstname" id="" class="form-control" placeholder="Firstname" aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
-                   <label for=""> <i class="fa fa-user-plus fa-2x" aria-hidden="true"></i> Lastname</label>
+                   <label for="" class="text-white"> <i class="fa fa-user-plus fa-2x" aria-hidden="true"></i> Lastname</label>
                        <input type="text" name="lastname" id="" class="form-control" placeholder="Lastname" aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
-                    <label for=""> <i class="fas fa-user-plus   "></i> Sirname</label>
+                    <label for="" class="text-white"> <i class="fas fa-user-plus   "></i> Sirname</label>
                        <input type="text" name="sirname" id="" class="form-control" placeholder="Sirname" aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
-                    <label for=""> <i class="fas fa-envelope    "></i> Email</label>
+                    <label for="" class="text-white"> <i class="fas fa-envelope    "></i> Email</label>
                        <input type="email" name="email" id="" class="form-control" placeholder="azahub@gmail.com" aria-describedby="helpId">  
                      </div>
                  </div>
 
                  <div class="col-sm-4">
                  <div class="form-group">
-                    <label for=""> <i class="fas fa-sticky-note    "></i> Course Name</label>
+                    <label for="" class="text-white"> <i class="fas fa-sticky-note    "></i> Course Name</label>
                        <input type="text" name="course_name" id="" class="form-control" placeholder="Course name" aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
-                         <label for="my-select"> <i class="fas fa-calendar-alt   "></i> Year</label>
+                         <label for="my-select" class="text-white"> <i class="fas fa-calendar-alt   "></i> Year</label>
                          <select id="my-select" class="custom-select" name="year">
                              <option value="First Year">1st Year</option>
                              <option value="Second Year">2nd Year</option>
@@ -135,12 +133,12 @@
                      </div>
 
                      <div class="form-group">
-                    <label for=""> <i class="fas fa-phone-square    "></i> Phone Number</label>
+                    <label for="" class="text-white"> <i class="fas fa-phone-square    "></i> Phone Number</label>
                        <input type="number" name="phone_no" id="" class="form-control" placeholder="Phone No." aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
-                    <label for=""> <i class="fas fa-map-marker-alt  "></i> Address</label>
+                    <label for="" class="text-white"> <i class="fas fa-map-marker-alt  "></i> Address</label>
                        <input type="text" name="address" id="" class="form-control" placeholder="Address" aria-describedby="helpId">  
                      </div>
 
@@ -149,7 +147,7 @@
                  <div class="col-sm-4">
                 
                  <div class="form-group">
-                     <label for="my-select"> <i class="fas fa-sticky-note    "></i> Department</label>
+                     <label for="my-select" class="text-white"> <i class="fas fa-sticky-note    "></i> Department</label>
                      <select id="my-select" class="custom-select" name="department">
                          <option value="Centre for Pedagogy & Andragogy">Centre for Pedagogy & Andragogy</option>
                          <option value="Agricultural Economics">Agricultural Economics</option>
@@ -200,16 +198,16 @@
                  </div>
 
                      <div class="form-group">
-                    <label for=""> <i class="fas fa-city    "></i> City</label>
+                    <label for="" class="text-white"> <i class="fas fa-city    "></i> City</label>
                        <input type="text" name="city" id="" class="form-control" placeholder="City" aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
-                    <label for=""> <i class="fa fa-map-pin" aria-hidden="true"></i> State</label>
+                    <label for="" class="text-white"> <i class="fa fa-map-pin" aria-hidden="true"></i> State</label>
                     <input type="text" name="state_name" id="" class="form-control" placeholder="State" aria-describedby="helpId">  
                      </div>
                        
-                     <label for=""> <i class="fas fa-users "></i> Select Gender</label>
+                     <label for="" class="text-white"> <i class="fas fa-users "></i> Select Gender</label>
                      <div class="form-check">
                          <label class="form-check-label">
                          <input type="radio" class="form-check-input" name="gender" id="" value="male" checked="checked">

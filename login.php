@@ -1,63 +1,27 @@
-
-
 <?php
-    session_start();
-    require_once('dbconnect.php');
-
-    if(isset($_POST['login']))
-    {
-        if(empty($_POST['UserName']) || empty($_POST['password']) )
-        {
-            header("location: ../logindesign.php?empty");
-            exit();
-        }
-        else
-        {
-            $UserName = mysqli_real_escape_string($con,$_POST['UserName']);
-            $Password = mysqli_real_escape_string($con,$_POST['password']);
-
-            $Query = " select * from userlogin where UserName='".$UserName."' or Email='".$UserName."'";
-            $result = mysqli_query($con,$Query);
-
-            if($row=mysqli_fetch_assoc($result))
-            {
-                $HashPass = password_verify($Password,$row['Password']);
-
-                if($HashPass==false)
-                {
-                    header("location: ../logindesign.php?P_Invalid");
-                    exit();
-                }
-                elseif($HashPass==true)
-                {
-                    $_SESSION['U_D']=$row['ID'];
-                    $_SESSION['FName']=$row['FName'];
-                    $_SESSION['LName']=$row['LName'];
-                    $_SESSION['Email']=$row['Email'];
-                    $_SESSION['UserName']=$row['UserName'];
-                    $_SESSION['Password']=$row['Password'];
-
-                    header("location: ../account.php?Well");
-                    exit();
-
-                }
-
-            }
-            else
-            {
-                header("location: ../logindesign.php?U_Invalid");
-                exit();
-            }
-            
-        }
-
-
-    }
-    else
-    {
-        header("location: ../logindesign.php");
-        exit();
-    }
+session_start();
+error_reporting(E_ALL ^ E_WARNING);
+require_once "dbconnect.php";
+if(isset($_POST['_username']))
+{   $UserName = stripslashes($_REQUEST['_username']);
+    $UserName = mysqli_real_escape_string($conn, $UserName);
+    $Password = stripslashes($_REQUEST['_password']);
+    $Password = mysqli_real_escape_string($conn, $Password);
+    $query = "SELECT * FROM `uaccounts` WHERE `username`='$UserName' AND `password`='".md5($Password)."'";
+    $result = mysqli_query($conn,$query);
+    $rows = mysqli_num_rows($result);
+if( $rows ==1 )
+     {
+ $_SESSION['_username']=$row['username'];
+ header("Location: index.php");
+ exit;
+  }
+  else
+     {
+        $message = "Wrong Username or password...Try Again!!!";
+        echo "<script type='text/javascript'>alert('$message');</script>";
+  }
+ }
 
 ?>
 
@@ -102,7 +66,7 @@
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <hr>
-                <h1 class="text-center white-text"><strong>LOGIN</strong> </h1>
+                <h1 class="text-center white-text"><strong>TRUA - H.R.M SYSTEM</strong> </h1>
             </div>
             <div class="col-sm-4"></div>
         </div>
@@ -111,15 +75,15 @@
             <div class="col-sm-4">
 
                 <!-- Default form login -->
-                <form class="text-center border border-light p-5" method="post" action="login.php">
+                <form class="text-center border border-warning p-5 wow rotateIn" method="post" action="login.php">
 
-                    <p class="h4 mb-4  white-text">Sign in</p>
+                    <p class="h4 mb-4 cyan-text stext-uppercase">Sign in</p>
                     <hr>
                     <div class="form-group">
-                        <input type="text" name="_username" id="" class="form-control my-4" placeholder="Username" aria-describedby="helpId">
+                         <input type="text" name="_username" id=""  class="form-control my-4 rounded-pill text-center" placeholder=" Username" aria-describedby="helpId">
                     </div>
                     <!-- Password -->
-                    <input type="password" name="_password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+                    <input type="password" name="_password" id="defaultLoginFormPassword" class="form-control mb-4 rounded-pill  text-center" placeholder="Password">
 
                     <div class="d-flex justify-content-around">
                         <div>

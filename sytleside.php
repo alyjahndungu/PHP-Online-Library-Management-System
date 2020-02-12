@@ -31,12 +31,53 @@
                 <ul class="sidebar" >
                     <li class="text-primary waves-effect"> <a href=""> <i class="fas fa-chart-line fa-1x"></i>Dashboard</a></li>
                     <hr>
-                    <li class="text-primary"> <a href=""> <i class="fas fa-book"></i> Assigned Books </a></li>
+                    <li>
+                      <div class="input-group">
+                          <span class="input-group-btn">
+                              <button type="button" class="btn dropdown-toggle text-primary" aria-label="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Manage Books
+                              </button>
+                              <div class="dropdown-menu ">
+                                  <a class="dropdown-item text-primary" href="#">Add Books</a>
+                                  <a class="dropdown-item text-primary" href="#">Returned Books</a>
+                                  <div role="separator" class="dropdown-divider"></div>
+                                  <a class="dropdown-item text-primary" href="#">Edit Books</a>
+                                  <a class="dropdown-item text-primary" href="#">Remove Books</a>
+                              </div>
+                          </span>
+                      </div>
+                    </li>
                     <hr>
-                    <li class="text-primary"> <a href=""> <i class="fas fa-book-open"></i>Manage Books </a></li>
+                    <li>
+                      <div class="input-group">
+                          <span class="input-group-btn">
+                              <button type="button" class="btn dropdown-toggle text-primary" aria-label="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="fa fa-user-circle" aria-hidden="true"></i>  Manage Fines
+                              </button>
+                              <div class="dropdown-menu ">
+                                  <a class="dropdown-item text-primary" href="#">View Fines</a>
+                                  <div role="separator" class="dropdown-divider"></div>
+                                  <a class="dropdown-item text-primary" href="#">Clear Fines</a>
+                              </div>
+                          </span>
+                      </div>
+                    </li>
                     <hr>
-                    <li  class="text-primary"> <a href=""> <i class="fas fa-boxes    "></i>View All Books </a></li>
-                    <hr>
+
+                    <li>
+                      <div class="input-group">
+                          <span class="input-group-btn" style="text-align:left">
+                              <button type="button" class="btn dropdown-toggle text-primary" aria-label="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <i class="fas fa-users-cog"></i>  Students
+                              </button>
+                              <div class="dropdown-menu ">
+                                  <a class="dropdown-item text-primary" href="#">Add Student</a>
+                                  <div role="separator" class="dropdown-divider"></div>
+                                  <a class="dropdown-item text-primary" href="#">View All Students</a>
+                              </div>
+                          </span>
+                      </div>
+                    </li>
                     <li  class="text-primary"> <i class="fas fa-hand-holding-usd"></i>Issued Books </li>
                     <hr>
                     <li  class="text-primary"> <i class="fas fa-torah"></i> Bookings</li>
@@ -47,18 +88,7 @@
                     <hr>
                     <li  class="text-primary"> <i class="fas fa-cogs    "></i> Settings</li>
                     <hr>
-                    <li>
-                        <div class="dropdown">
-                           <a class="btn btn-white dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                               aria-haspopup="true" aria-expanded="false">Mange Books</a>
-                           <div class="dropdown-menu dropdown-primary">
-                               <a class="dropdown-item" href="#">Assign</a>
-                               <a class="dropdown-item" href="#">Add new Boks</a>
-                               <a class="dropdown-item" href="#">Something else here</a>
-                               <a class="dropdown-item" href="#">Something else here</a>
-                           </div>
-                        </div>
-                    </li>
+                    <li  class="text-primary"> <i class="fas fa-cogs    "></i> About Software</li>
                     <hr>
                 </ul>
                </div>
