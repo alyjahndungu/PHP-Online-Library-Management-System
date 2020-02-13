@@ -1,5 +1,5 @@
 <?php
-require_once "dbconnect.php";
+require_once "dbconnection.php";
 if (isset($_POST['submit'])) {
 $student_id = mysqli_real_escape_string($conn, $_POST['studentid']);
 $firstname= mysqli_real_escape_string($conn, $_POST['firstname']);

@@ -64,7 +64,7 @@
 
 
     <div class="row">
-      <div class="col-md-2" style="background-image: url('img/room.webp')">
+      <div class="col-md-2">
      
         <?php include_once('sidebar.php') ?>
       </div>
