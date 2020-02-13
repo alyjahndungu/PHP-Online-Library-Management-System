@@ -1,5 +1,5 @@
 #sidebar{
-    background-color: #1b222e;
+    background-color: #434d5e;
    }
 #sidebar .h6 {
     color: #fff; }
@@ -7,14 +7,9 @@
     margin-left: -270px; }
     #sidebar h1 {
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 30px; }
-    #sidebar h1 .logo {
-        color: #fff; }
-        #sidebar h1 .logo span {
-        font-size: 14px;
-        color: #44bef1;
-        display: block; }
+    font-weight: 500;
+    font-size: 20px; }
+   
      #sidebar ul.components {
        padding: 0; }
      #sidebar ul li {

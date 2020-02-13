@@ -17,9 +17,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
   </style>
-
-  <link rel="stylesheet" href="css/style.csss">
-
+  <link rel="stylesheet" href="css/custom.css">
   <style>
     @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
   </style>
