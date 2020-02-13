@@ -19,14 +19,11 @@ $result1 = mysqli_query($conn, $query);
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
-
   <!--custom fonts-->
   <style>
     @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
   </style>
-
-  <link rel="stylesheet" href="css/style.csss">
-
+<link rel="stylesheet" href="css/custom.css">
   <style>
     @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
   </style>
