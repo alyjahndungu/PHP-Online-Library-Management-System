@@ -1,13 +1,13 @@
 <?php
 session_start();
 error_reporting(E_ALL ^ E_WARNING);
-require_once 'dbconnect.php';
+require_once 'dbconnection.php';
 if(isset($_POST['_username']))
 {   $UserName = stripslashes($_REQUEST['_username']);
     $UserName = mysqli_real_escape_string($conn, $UserName);
     $Password = stripslashes($_REQUEST['_password']);
     $Password = mysqli_real_escape_string($conn, $Password);
-    $query = "SELECT * FROM `accounts` WHERE `username`='$UserName' AND `password`='".md5($Password)."'";
+    $query = "SELECT * FROM `users` WHERE `username`='$UserName' AND `password`='".md5($Password)."'";
     $result = mysqli_query($conn,$query);
     $rows = mysqli_num_rows($result);
 if( $rows ==1 )

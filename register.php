@@ -1,7 +1,6 @@
 <?php
 error_reporting(E_ALL^E_WARNING);
-require_once 'dbconnect.php';
-
+require_once 'dbconnection.php';
 if (isset($_POST['register'])) {
   $fname = mysqli_real_escape_string($conn, $_POST['fname']);
   $lname = mysqli_real_escape_string($conn, $_POST['lname']);
@@ -17,7 +16,7 @@ if (isset($_POST['register'])) {
         echo "<script type='text/javascript'>alert('$message');</script>";
       }else{
        $password = md5($password);
-       $query = "INSERT INTO `accounts` (`id`,`firstname`,`lastname`,`username`,`email`,`password`,`phone`)
+       $query = "INSERT INTO `users`(`firstname`, `lastname`, `username`, `email`, `password`, `phone`) 
        VALUES('$fname', '$lname','$user_name', '$email', '$password', '$phone')";
        mysqli_query($conn, $query);
        $_SESSION['success'] = "Succesifully Added" .mysqli_error($conn);
@@ -61,7 +60,7 @@ if (isset($_POST['register'])) {
           <div class="col-sm-4"></div>
           <div class="col-sm-4">
 <!-- Default form register -->
-<form class="text-center border border-warning p-5 wow fadeIn" method="post" action="register.php">
+<form class="text-center border border-warning p-5 wow fadeInLeft" method="post" action="register.php">
         <div class="form-row mb-4">
         <div class="col">
         <!-- First name -->
@@ -90,15 +89,6 @@ if (isset($_POST['register'])) {
         <!-- Sign up button -->
         <button class="btn  my-4 btn-block btn-outline-purple rounded-pill wow shake" name="register" type="submit">Sign Up</button>
         <p>Already Registered??</p> <a href="login.php" class="text-warning">Sign in here</a>
-
-<!-- Social register -->
-<!--
-<p>or sign up with:</p>
-<a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
-<a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
-<a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
-<a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
--->
 <hr>
 </form>
 <!-- Default form register -->
@@ -109,8 +99,6 @@ if (isset($_POST['register'])) {
   <script>
     //wow amination
     new WOW().init();
-    //slide
-    $(document).foundation();
   </script>
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -120,8 +108,5 @@ if (isset($_POST['register'])) {
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
-
-
 </body>
-
 </html>

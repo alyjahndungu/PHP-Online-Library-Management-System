@@ -45,7 +45,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse " id="navbarSupportedContent-333">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
          <ul class="navbar-nav ml-auto nav-flex-icons">
          <li class="nav-item dropdown">
          <a class="nav-link dropdown-toggle blue-text" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -55,7 +55,7 @@
             <a class="dropdown-item text-primary" href="#"> <i class="fa fa-user" aria-hidden="true"></i> My Profile</a></a>
             <a class="dropdown-item text-primary" href="#"> <i class="fa fa-cog" aria-hidden="true"></i> Change Password</a>
             <a class="dropdown-item text-primary" href="#"> <i class="fas fa-user-cog    "></i> Update Details</a>
-            <a class="dropdown-item text-primary" href="#"> <i class="fa fa-power-off" aria-hidden="true"></i> Logout</a>
+            <a class="dropdown-item text-primary" href="logout.php"> <i class="fa fa-power-off" aria-hidden="true"></i> Logout</a>
 
           </div>
         </li>
@@ -77,9 +77,8 @@
 
           <div class="col-sm-3">
             <div class="card wow fadeInLeft">
-              <i class="fa fa-address-book brown-text text-center fa-4x" aria-hidden="true"></i>
               <div class="card-body">
-                <h4 class="card-title"><a>22</a></h4>
+                <h4 class="card-title display-3"><a>1122</a></h4>
                 <p class="card-text">Today's issued Books</p>
               </div>
             </div>
@@ -87,9 +86,8 @@
           
           <div class="col-sm-3">
             <div class="card wow fadeInUp">
-              <i class="fas fa-book yellow-text text-center fa-4x"></i>
               <div class="card-body">
-                <h4 class="card-title"><a>59</a></h4>
+                <h4 class="card-title display-3"><a>5129</a></h4>
                 <p class="card-text">Returned Books</p>
 
               </div>
@@ -99,9 +97,8 @@
 
           <div class="col-sm-3">
             <div class="card wow fadeInRight">
-              <i class="fas fa-book blue-text text-center fa-4x"></i>
-              <div class="card-body">
-                <h4 class="card-title"><a>203</a></h4>
+              <div class="card-body bg-blue">
+                <h4 class="card-title display-3"><a>2032</a></h4>
                 <p class="card-text">Not Returned Books</p>
 
               </div>
@@ -112,15 +109,14 @@
 
           <div class="col-sm-3">
             <div class="card wow fadeInLeft">
-              <i class="fas fa-book red-text text-center fa-4x"></i>
               <div class="card-body">
-                <h4 class="card-title"><a>1,223</a></h4>
+                <h4 class="card-title display-3"><a>1,223</a></h4>
                 <p class="card-text">Total Books</p>
 
               </div>
             </div>
           </div>
-        </div>
+        </div>  
         <hr>
         <div class="row">
           <div class="col-md-1"></div>
@@ -140,6 +136,7 @@
 
           <div class="col-md-3">
           <canvas id="barChart"></canvas>
+
           </div>
         </div>
 <div class="row">
