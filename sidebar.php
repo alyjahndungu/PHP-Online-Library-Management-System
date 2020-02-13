@@ -1,11 +1,11 @@
- <aside class="left-panel wow pulse" >
+ <aside class="left-panel" >
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar" class="mask rgba-gradient align-items-center">
 			<div class="p-4">
 	        <ul class="list-unstyled components mb-5">
                 <hr>
 	          <li class="active">
-	          <a href="#" class="text-white  waves-effect"> <span class="fas fa-tachometer-alt mr-3"></span> Dashboard</a>
+	          <a href="dashboard.php" class="text-white  waves-effect"> <span class="fas fa-tachometer-alt mr-3"></span> Dashboard</a>
 	          </li>
 	          <li>
 	          <a href="add_books.php" class="text-white  waves-effect"><span class="fas fa-book-medical mr-3" ></span> Add Book</a>

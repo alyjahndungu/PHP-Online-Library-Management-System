@@ -38,8 +38,7 @@ if (isset($_POST['register'])) {
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/custom.css">
   <!--custom fonts-->
   <style>
     @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
