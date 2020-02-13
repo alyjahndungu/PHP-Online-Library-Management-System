@@ -6,98 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link rel="stylesheet" href="css/custom.css">
 <!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 <!-- Bootstrap core CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<style>
-.sidebar{
-    text-decoration: none;
-    list-style: none
-}
-
-</style>
 <body>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2">
-            <aside>
-            <div class="card wow slideInLeft">
-               <div class="card-body">
-                <ul class="sidebar" >
-                    <li class="text-primary waves-effect"> <a href=""> <i class="fas fa-chart-line fa-1x"></i>Dashboard</a></li>
-                    <hr>
-                    <li>
-                      <div class="input-group">
-                          <span class="input-group-btn">
-                              <button type="button" class="btn dropdown-toggle text-primary" aria-label="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Manage Books
-                              </button>
-                              <div class="dropdown-menu ">
-                                  <a class="dropdown-item text-primary" href="#">Add Books</a>
-                                  <a class="dropdown-item text-primary" href="#">Returned Books</a>
-                                  <div role="separator" class="dropdown-divider"></div>
-                                  <a class="dropdown-item text-primary" href="#">Edit Books</a>
-                                  <a class="dropdown-item text-primary" href="#">Remove Books</a>
-                              </div>
-                          </span>
-                      </div>
-                    </li>
-                    <hr>
-                    <li>
-                      <div class="input-group">
-                          <span class="input-group-btn">
-                              <button type="button" class="btn dropdown-toggle text-primary" aria-label="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           <i class="fa fa-user-circle" aria-hidden="true"></i>  Manage Fines
-                              </button>
-                              <div class="dropdown-menu ">
-                                  <a class="dropdown-item text-primary" href="#">View Fines</a>
-                                  <div role="separator" class="dropdown-divider"></div>
-                                  <a class="dropdown-item text-primary" href="#">Clear Fines</a>
-                              </div>
-                          </span>
-                      </div>
-                    </li>
-                    <hr>
+        <aside class="left-panel">
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="mask rgba-gradient align-items-center">
+			<div class="p-4">
+	        <ul class="list-unstyled components mb-5">
+                <hr>
+	          <li class="active">
+	          <a href="#" class="text-white"> <span class="fas fa-tachometer-alt mr-3"></span> Dashboard</a>
+	          </li>
+	          <li>
+	          <a href="#" class="text-white"><span class="fas fa-book-medical mr-3" ></span> Add Book</a>
+	          </li>
+	          <li>
+              <a href="#" class="text-white"><span class="fas fa-chess mr-3"></span> Edit Books</a>
+	          </li>
+	          <li>
+              <a href="#" class="text-white"><span class="fas fa-book  mr-3"></span>Remove Books</a>
+	          </li>
+	          <li>
+              <a href="#" class="text-white"><span class="fas fa-hand-holding-usd mr-3"></span> View Fines</a>
+	          </li>
+	          <li>
+              <a href="#" class="text-white"><span class="fas fa-comments-dollar mr-3"></span>Clear Fines</a>
+	          </li>
+	          <li>
+              <a href="#" class="text-white"><span class="fa fa-swatchbook mr-3"></span> Issue Books</a>
+              </li>
+              <li>
+              <a href="#" class="text-white"><span class="fa fa-binoculars mr-3"></span> View All Books</a>
+             </li>    
+              <li>
+              <a href="#" class="text-white"><span class="fa fa-street-view mr-3"></span> View Bookings</a>
+              </li>
+              <li>
+              <a href="#" class="text-white"><span class="fas fa-user-plus mr-3"></span> Add Students</a>
+              </li>
+              <li>
+              <a href="#" class="text-white"><span class="fas fa-users mr-3"></span> View All Students</a>
+              </li>
+              <li>
+              <a href="#" class="text-white"><span class="fas fa-cogs mr-3"></span> Manage Courses</a>
+              </li>
+              <li>
+              <a href="#" class="text-white"><span class="fas fa-calendar-plus mr-3"></span> Manage Years</a>
+              </li>
+              <li>
+              <a href="#" class="text-white"><span class="fab fa-affiliatetheme mr-3"></span> About Software</a>
+	          </li>
+	        </ul>
+	      </div>
+    	</nav>
+		</div>
+        </aside>
 
-                    <li>
-                      <div class="input-group">
-                          <span class="input-group-btn" style="text-align:left">
-                              <button type="button" class="btn dropdown-toggle text-primary" aria-label="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             <i class="fas fa-users-cog"></i>  Students
-                              </button>
-                              <div class="dropdown-menu ">
-                                  <a class="dropdown-item text-primary" href="#">Add Student</a>
-                                  <div role="separator" class="dropdown-divider"></div>
-                                  <a class="dropdown-item text-primary" href="#">View All Students</a>
-                              </div>
-                          </span>
-                      </div>
-                    </li>
-                    <li  class="text-primary"> <i class="fas fa-hand-holding-usd"></i>Issued Books </li>
-                    <hr>
-                    <li  class="text-primary"> <i class="fas fa-torah"></i> Bookings</li>
-                    <hr>
-                    <li  class="text-primary"> <i class="fab fa-btc"></i> Manage Fines</li>
-                    <hr>
-                    <li  class="text-primary"> <i class="far fa-address-card"></i> About</li>
-                    <hr>
-                    <li  class="text-primary"> <i class="fas fa-cogs    "></i> Settings</li>
-                    <hr>
-                    <li  class="text-primary"> <i class="fas fa-cogs    "></i> About Software</li>
-                    <hr>
-                </ul>
-               </div>
-            </div>
-            </aside>
         </div>
-        <div class="col-md-8">
-
-        
+        <div class="col-md-8">   
         </div>
     </div>
 </div>    

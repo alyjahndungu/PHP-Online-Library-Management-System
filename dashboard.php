@@ -11,8 +11,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
   <!--custom fonts-->
   <style>
     @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
@@ -67,7 +66,7 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2" style="background-image: url('img/room.webp')">
+      <div class="col-md-2" tyle="background-image: url('img/room.webp')">
 
         <?php include_once('sidebar.php') ?>
       </div>
@@ -196,7 +195,7 @@ borderColor: [
 'rgba(200, 99, 132, .7)',
 ],
 borderWidth: 2
-},
+}, 
 {
 label: "My Second dataset",
 data: [28, 48, 40, 19, 86, 27, 90, 78, 77, 88, 54, 70],

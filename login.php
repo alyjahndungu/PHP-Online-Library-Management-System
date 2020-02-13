@@ -1,7 +1,7 @@
 <?php
 session_start();
 error_reporting(E_ALL ^ E_WARNING);
-require_once "dbconnect.php";
+require_once 'dbconnect.php';
 if(isset($_POST['_username']))
 {   $UserName = stripslashes($_REQUEST['_username']);
     $UserName = mysqli_real_escape_string($conn, $UserName);

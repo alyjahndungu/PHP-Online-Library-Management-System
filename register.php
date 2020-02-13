@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL^E_WARNING);
-require_once "dbconnect.php";
+require_once 'dbconnect.php';
 
 if (isset($_POST['register'])) {
   $fname = mysqli_real_escape_string($conn, $_POST['fname']);
@@ -28,7 +28,6 @@ if (isset($_POST['register'])) {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">

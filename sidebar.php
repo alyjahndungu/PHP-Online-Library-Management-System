@@ -1,99 +1,56 @@
-<aside id="left-panel" class="left-panel white-text">
-        <nav class="navbar navbar-expand-sm navbar-default">
-            <div id="main-menu" class="main-menu collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                <img class="img-fluid" src="" alt=""> <i class="fa fa-user fa-3x" aria-hidden="true"></i>
-                <label for="loggedUser" class="yellow-text"> Azahub Username</label>
-                <table class="table" style="background-color: slategray">
-                    <tbody>
-
-                        <tr>
-                       <td><li class="active">
-                        <a href="#" class="white-text"><i class="menu-icon fa fa-laptop"></i>Dashboard </a></li>
-                       </td>
-                        <tr>
-                            <td><li class="menu-item-has-children dropdown " >
-                        <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-book    "></i> Manage Books</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <a href="#" class="blue-text"><li> <i class="fas fa-book-reader    "></i> Add Books</a></li>
-                            <a href="#" class="blue-text"><li> <i class="fas fa-book-reader    "></i> Returned Books</a></li>
-                            <a href="#" class="blue-text"><li> <i class="fas fa-book-reader    "></i> Not Returned</a></li>
-                            <a href="#" class="blue-text"><li> <i class="fas fa-book-reader    "></i>View All Books</a></li>
-    </ul>   
-                    </li>
-                </td>
-                    
-                        </tr>
-
-
-                        <tr>
-                            <td>   <li class="menu-item-has-children dropdown " >
-                        <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-money-bill    "></i> Manage Fines</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <a href="#" class="blue-text"><li> <i class="fas fa-money-bill-alt "></i> Unpaid Fines</a></li>
-                       
-                           <a href="#">  <li> <i class="fas fa-money-bill-wave    "></i> Paid Fines</a></li>
-                        </ul>
-                    </li>
-                </td>
-                    
-                        </tr>
-
-                        <tr>
-                            <td> <li class="active">
-                        <a href="#" class="white-text"> <i class="fa fa-address-book" aria-hidden="true"></i> Issue Books</a>
-                    </li></td>
-                    
-                        </tr>
-
-                        <tr>
-                            <td> <li class="active">
-                        <a href="#" class="white-text"><i class="fa fa-address-book" aria-hidden="true"></i>View All Books</a>
-                    </li></td>
-                    
-                        </tr>
-
-                        <tr>
-                            <td> <li class="active">
-                        <a href="#" class="white-text"> <i class="fa fa-cart-plus" aria-hidden="true"></i> View Bookings </a>
-                    </li></td>
-                    
-                        </tr>
-
-
-                        <tr>
-                            <td>   <li class="menu-item-has-children dropdown " >
-                        <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-users-cog    "></i> Manage Students</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <a href="add_student.php" class="blue-text"><li> <i class="fas fa-user-plus    "></i> Add Student</a></li>
-                       
-                           <a href="view_all_students.php">  <li> <i class="fas fa-users    "></i> View all Students</a></li>
-                        </ul>
-                    </li>
-                </td>
-                    
-                        </tr>
-
-                        <tr>
-                            <td>
-                            <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cogs" aria-hidden="true"></i> Settings</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><a href="manage-incomingvehicle.php"> <i class="fa fa-cog" aria-hidden="true"></i> Manage Courses</a></li>
-                            <li><a href="manage-outgoingvehicle.php"> <i class="fa fa-cog" aria-hidden="true"></i>Manage Years</a>
-                           
-                        </li>
-
-                
-                </td>
-                    
-                        </tr>
-
-                      
-                    </tbody>
-                </table>
-                  
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </nav>
-    </aside>
+ <aside class="left-panel wow pulse" >
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="mask rgba-gradient align-items-center">
+			<div class="p-4">
+	        <ul class="list-unstyled components mb-5">
+                <hr>
+	          <li class="active">
+	          <a href="#" class="text-white  waves-effect"> <span class="fas fa-tachometer-alt mr-3"></span> Dashboard</a>
+	          </li>
+	          <li>
+	          <a href="add_books.php" class="text-white  waves-effect"><span class="fas fa-book-medical mr-3" ></span> Add Book</a>
+	          </li>
+	          <li>
+              <a href="#" class="text-white  waves-effect"><span class="fas fa-chess mr-3"></span> Edit Books</a>
+	          </li>
+	          <li>
+              <a href="#" class="text-white  waves-effect"><span class="fas fa-book  mr-3"></span>Remove Books</a>
+	          </li>
+	          <li>
+              <a href="#" class="text-white  waves-effect"><span class="fas fa-hand-holding-usd mr-3"></span> View Fines</a>
+	          </li>
+	          <li>
+              <a href="#" class="text-white  waves-effect"><span class="fas fa-comments-dollar mr-3"></span>Clear Fines</a>
+	          </li>
+	          <li>
+              <a href="issue_book.php" class="text-white  waves-effect"><span class="fa fa-swatchbook mr-3"></span> Issue Books</a>
+              </li>
+              <li>
+              <a href="#" class="text-white  waves-effect"><span class="fa fa-binoculars mr-3"></span> View All Books</a>
+             </li>    
+              <li>
+              <a href="#" class="text-white  waves-effect"><span class="fa fa-street-view mr-3"></span> View Bookings</a>
+              </li>
+              <li>
+              <a href="add_student.php" class="text-white  waves-effect"><span class="fas fa-user-plus mr-3"></span> Add Students</a>
+              </li>
+              <li>
+              <a href="view_all_students.php" class="text-white  waves-effect"><span class="fas fa-users mr-3"></span> View All Students</a>
+              </li>
+              <li>
+              <a href="#" class="text-white  waves-effect"><span class="fas fa-cogs mr-3"></span> Manage Courses</a>
+              </li>
+              <li>
+              <a href="#" class="text-white  waves-effect"><span class="fas fa-calendar-plus mr-3"></span> Manage Years</a>
+              </li>
+              <li>
+              <a href="#" class="text-white  waves-effect"><span class="fab fa-affiliatetheme mr-3"></span> About Software</a>
+	          </li>
+	        </ul>
+	      </div>
+    	</nav>
+		</div>
+        </aside>
+<script>
+new WOW().init();
+</script>

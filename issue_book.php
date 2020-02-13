@@ -15,11 +15,8 @@
   <!--custom fonts-->
   <style>
     @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
-  </style>
-  <link rel="stylesheet" href="css/style.csss">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
-  </style>
+</style>
+  <link rel="stylesheet" href="css/custom.css">
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
