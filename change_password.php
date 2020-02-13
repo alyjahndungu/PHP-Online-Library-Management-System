@@ -11,7 +11,7 @@ if($pwd == $c_pwd) :if($pwd!=$old_pwd) :
     $count=mysqli_num_rows($db_check);
   if($count==1) :
     $fetch=$db->query("UPDATE `users` SET `password` = '$pwd' WHERE `id`='$user_id'");
-    $old_password=''; $password =''; $confirm_pwd = '';
+    $current_pass=''; $password =''; $confirm_pwd = '';
     $msg_sucess = "Your new password update successfully.";
   else:
     $error = "The password you gave is incorrect.";

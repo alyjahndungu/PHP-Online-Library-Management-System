@@ -32,7 +32,7 @@
 <body style="background-color:slategray">
   <!--Navbar -->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark ">
-    <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="100rem" width="80rem" alt=""> O-Library System
+  <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="120rem" width="100rem" alt=""> <span class="text-uppercase text-white" style="padding-left: 400px"> <strong> Online Library Management System</strong></span> 
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

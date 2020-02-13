@@ -16,11 +16,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
   </style>
-
-
   <!-- JQuery -->
-
-
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -40,7 +36,7 @@
 
   <!--Navbar -->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark ">
-    <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="100rem" width="80rem" alt=""> O-Library System
+    <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="120rem" width="100rem" alt=""> <span class="text-uppercase text-white" style="padding-left: 400px"> <strong> Online Library Management System</strong></span> 
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -78,8 +74,8 @@
           <div class="col-sm-3">
             <div class="card wow fadeInLeft">
               <div class="card-body">
-                <h4 class="card-title display-3"><a>1122</a></h4>
-                <p class="card-text">Today's issued Books</p>
+                <h4 class="card-title  brown-text text-center"><a>1122</a></h4>
+                <p class="card-text pink-text text-center">Today's issued Books</p>
               </div>
             </div>
           </div>
@@ -87,8 +83,8 @@
           <div class="col-sm-3">
             <div class="card wow fadeInUp">
               <div class="card-body">
-                <h4 class="card-title display-3"><a>5129</a></h4>
-                <p class="card-text">Returned Books</p>
+                <h4 class="card-title  brown-text text-center"><a>5129</a></h4>
+                <p class="card-text pink-text text-center">Returned Books</p>
 
               </div>
             </div>
@@ -98,8 +94,8 @@
           <div class="col-sm-3">
             <div class="card wow fadeInRight">
               <div class="card-body bg-blue">
-                <h4 class="card-title display-3"><a>2032</a></h4>
-                <p class="card-text">Not Returned Books</p>
+                <h4 class="card-title  brown-text text-center"><a>2032</a></h4>
+                <p class="card-text pink-text text-center">Not Returned Books</p>
 
               </div>
             </div>
@@ -110,8 +106,8 @@
           <div class="col-sm-3">
             <div class="card wow fadeInLeft">
               <div class="card-body">
-                <h4 class="card-title display-3"><a>1,223</a></h4>
-                <p class="card-text">Total Books</p>
+                <h4 class="card-title  brown-text text-center"><a>1223</a></h4>
+                <p class="card-text pink-text text-center">Total Books</p>
 
               </div>
             </div>
@@ -119,24 +115,20 @@
         </div>  
         <hr>
         <div class="row">
-          <div class="col-md-1"></div>
-      
+         
           <div class="col-md-8">
             <!--Pie chart for the details-->
             <div class="card wow bounceInUp">
               <div class="card-body">
-                <!--<canvas id="doughnutChart"></canvas>-->
                 <canvas id="lineChart"></canvas>
               </div>
-            </div>
-
-
-
-          </div>
-
-          <div class="col-md-3">
-          <canvas id="barChart"></canvas>
-
+              </div>
+              </div>
+          <div class="col-md-4">
+          <div class="card wow bounceInUp">
+              <div class="card-body">
+             <canvas id="doughnutChart"></canvas>
+              </div>
           </div>
         </div>
 <div class="row">
@@ -157,23 +149,23 @@
   <?php include_once('footer.php'); ?>
   <script>
     //doughnut
-    /* 
+
     var ctxD = document.getElementById("doughnutChart").getContext('2d');
     var myLineChart = new Chart(ctxD, {
       type: 'doughnut',
       data: {
-        labels: ["Medicine", "IT and Computing", "Bussiness", "Science", "Agriculture"],
+        labels: ["New Books", "New Students", "Fines"],
         datasets: [{
-          data: [300, 50, 100, 40, 120],
-          backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-          hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+          data: [180, 260, 60],
+          backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
+          hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
         }]
       },
       options: {
         responsive: true
       }
     });
-    */
+  
     //wow amination
 
 //line
