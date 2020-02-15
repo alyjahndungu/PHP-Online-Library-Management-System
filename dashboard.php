@@ -116,7 +116,7 @@
         <hr>
         <div class="row">
          
-          <div class="col-md-8">
+          <div class="col-md-7">
             <!--Pie chart for the details-->
             <div class="card wow bounceInUp">
               <div class="card-body">
@@ -124,10 +124,10 @@
               </div>
               </div>
               </div>
-          <div class="col-md-4">
+          <div class="col-md-5">
           <div class="card wow bounceInUp">
               <div class="card-body">
-             <canvas id="doughnutChart"></canvas>
+              <canvas id="horizontalBar"></canvas>
               </div>
           </div>
         </div>
@@ -148,24 +148,37 @@
 
   <?php include_once('footer.php'); ?>
   <script>
-    //doughnut
+  //bar chart
+  new Chart(document.getElementById("horizontalBar"), {
+"type": "horizontalBar",
+"data": {
+"labels": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey"],
+"datasets": [{
+"label": "My First Dataset",
+"data": [22, 33, 55, 12, 86, 23, 14],
+"fill": false,
+"backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
+"rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)",
+"rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"
+],
+"borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
+"rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"
+],
+"borderWidth": 1
+}]
+},
+"options": {
+"scales": {
+"xAxes": [{
+"ticks": {
+"beginAtZero": true
+}
+}]
+}
+}
+});
+  //end barchart
 
-    var ctxD = document.getElementById("doughnutChart").getContext('2d');
-    var myLineChart = new Chart(ctxD, {
-      type: 'doughnut',
-      data: {
-        labels: ["New Books", "New Students", "Fines"],
-        datasets: [{
-          data: [180, 260, 60],
-          backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
-          hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
-        }]
-      },
-      options: {
-        responsive: true
-      }
-    });
-  
     //wow amination
 
 //line

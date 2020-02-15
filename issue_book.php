@@ -94,23 +94,23 @@
                          <div class="col-sm-6">
 
                         <div class="form-group">
-                          <label for="">Book No.</label>
+                          <label for="" class="yellow-text">Book No.</label>
                           <input type="text" name="bookno" id="" class="form-control" placeholder="Enter ISBN" aria-describedby="helpId">
                         </div>
 
                         <div class="form-group">
-                          <label for="">Book Title</label>
-                          <input type="text" name="booktitle" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <label for="" class="yellow-text">Book Title</label>
+                          <input type="text" name="booktitle" id="" class="form-control" placeholder="Boo" aria-describedby="helpId">
                         </div>
                           
 
                         <div class="form-group">
-                          <label for="">User Id</label>
+                          <label for="" class="yellow-text">User Id</label>
                           <input type="text" name="userid" id="" class="form-control" placeholder="" aria-describedby="helpId">
                         </div>
 
                           <div class="form-group">
-                          <label for="">Name</label>
+                          <label for="" class="yellow-text">Name</label>
                           <input type="text" name="name" id="" class="form-control" placeholder="" aria-describedby="helpId">
                           </div>
 

@@ -41,7 +41,7 @@ $result1 = mysqli_query($conn, $query);
 
   <title>AZAHUB - OLibrary System</title>
   </title>
-
+`
 
 </head>
 
@@ -65,7 +65,7 @@ $result1 = mysqli_query($conn, $query);
             <a class="dropdown-item text-primary" href="#"> <i class="fa fa-user" aria-hidden="true"></i> My Profile</a></a>
             <a class="dropdown-item text-primary" href="#"> <i class="fa fa-cog" aria-hidden="true"></i> Change Password</a>
             <a class="dropdown-item text-primary" href="#"> <i class="fas fa-user-cog    "></i> Update Details</a>
-            <a class="dropdown-item text-primary" href="#"> <i class="fa fa-power-off" aria-hidden="true"></i> Logout</a>
+            <a class="dropdown-item text-primary" href="logout.php"> <i class="fa fa-power-off" aria-hidden="true"></i> Logout</a>
 
           </div>
         </li>
@@ -86,24 +86,24 @@ $result1 = mysqli_query($conn, $query);
           <div class="col-md-12">
 <!-- Editable table -->
 <div class="card">
-  <h3 class="card-header text-center font-weight-bold text-uppercase py-4"><em>AZAHUB</em> - View All Students</h3>
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4 wow fadeInDown text-danger"><em>AZAHUB</em> - View All Students</h3>
   <div class="card-body">
     <div id="table" class="table-editable">
       <table class="table table-bordered table-responsive-md table-striped text-center">
         <thead>
           <tr>
-          <th class="text-center">ID</th>
-            <th class="text-center">Student ID</th>
-            <th class="text-center">Firstname</th>
-            <th class="text-center">Lastname</th>
-            <th class="text-center">Sirname</th>
-            <th class="text-center">Email</th>
-            <th class="text-center">Course</th>
-            <th class="text-center">Year</th>
-            <th class="text-center">Phone</th>
-            <th class="text-center">Address</th> 
-            <th class="text-center">Department</th>
-            <th class="text-center">Gender</th>       
+          <th class="text-center text-secondary">ID</th>
+            <th class="text-center text-secondary">Student ID</th>
+            <th class="text-center text-secondary">Firstname</th>
+            <th class="text-center text-secondary">Lastname</th>
+            <th class="text-center text-secondary">Sirname</th>
+            <th class="text-center text-secondary">Email</th>
+            <th class="text-center text-secondary">Course</th>
+            <th class="text-center text-secondary">Year</th>
+            <th class="text-center text-secondary">Phone</th>
+            <th class="text-center text-secondary">Address</th> 
+            <th class="text-center text-secondary">Department</th>
+            <th class="text-center text-secondary">Gender</th>       
           </tr>
         </thead>
         <tbody>

@@ -18,7 +18,7 @@
     @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
   </style>
   <link rel="stylesheet" href="css/custom.css">
-  <!-- JQuery --
+  <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -30,7 +30,7 @@
   <title>AZAHUB - OLibrary System</title>
   </title>
 
-
+  
 </head>
 
 <body style="background-color:slategray">
@@ -123,7 +123,7 @@
 
                      <div class="form-group">
                     <label for="" class="text-white"> <i class="fas fa-phone-square    "></i> Phone Number</label>
-                       <input type="number" name="phone_no" id="" class="form-control" placeholder="Phone No." aria-describedby="helpId">  
+                       <input type="number" name="phone_no" id="" class="form-control" placeholder="Phone No." maxlength="13" aria-describedby="helpId">  
                      </div>
 
                      <div class="form-group">
@@ -147,41 +147,41 @@
                          <option value="Obstetrics & Gynaecology"> Obstetrics & Gynaecology</option>
                          <option value="Diagnostic Imaging & Radiation Medicine">Diagnostic Imaging & Radiation Medicine </option>
 
-                         <option value=""> Clinical Medicine and Therapeutics</option>
-                         <option value=""> Institute of Tropical & Infectious Diseases</option>
+                         <option value="Clinical Medicine and Therapeutics"> Clinical Medicine and Therapeutics</option>
+                         <option value="Institute of Tropical & Infectious Diseases"> Institute of Tropical & Infectious Diseases</option>
 
-                         <option value="">Periodontology/Community and Preventive Dentistry </option>
-                         <option value=""> Education Communication and Technology</option>
+                         <option value="Periodontology/Community and Preventive Dentistry">Periodontology/Community and Preventive Dentistry </option>
+                         <option value=" Education Communication and Technology"> Education Communication and Technology</option>
 
-                         <option value="">Civil and Construction Engineering</option>
-                         <option value="">Electrical and Information Engineering </option>
+                         <option value="Civil and Construction Engineering">Civil and Construction Engineering</option>
+                         <option value="Electrical and Information Engineering">Electrical and Information Engineering </option>
 
-                         <option value=""> School of Mathematics</option>
-                         <option value="">School of Computing and Informatics </option>
+                         <option value="School of Mathematics"> School of Mathematics</option>
+                         <option value="School of Computing and Informatics">School of Computing and Informatics </option>
 
-                         <option value=""> Urban and Regional Planning</option>
-                         <option value="">Real Estate and Construction Management </option>
+                         <option value="Urban and Regional Planning"> Urban and Regional Planning</option>
+                         <option value="Real Estate and Construction Management">Real Estate and Construction Management </option>
 
-                         <option value="">Architecture and Building Science </option>
-                         <option value="">Nuclear Science & Technology </option>
+                         <option value="Architecture and Building Science">Architecture and Building Science </option>
+                         <option value="Nuclear Science & Technology">Nuclear Science & Technology </option>
 
-                         <option value=""> Geospatial and Space Technology</option>
-                         <option value=""> Mechanical and Manufacturing Engineering</option>
+                         <option value="Geospatial and Space Technology"> Geospatial and Space Technology</option>
+                         <option value="Mechanical and Manufacturing Engineering"> Mechanical and Manufacturing Engineering</option>
 
-                         <option value=""> School of Biological Sciences</option>
-                         <option value="">Centre for Biotechnology & Bioinformatics </option>
+                         <option value="School of Biological Sciences"> School of Biological Sciences</option>
+                         <option value="Centre for Biotechnology & Bioinformatics">Centre for Biotechnology & Bioinformatics </option>
 
-                         <option value=""> Veterinary Pathology, Microbiology & Parasitology</option>
-                         <option value="">Vet. Anatomy and Physiology </option>
+                         <option value="Veterinary Pathology, Microbiology & Parasitology"> Veterinary Pathology, Microbiology & Parasitology</option>
+                         <option value="Vetinary Anatomy and Physiology ">Vetinary Anatomy and Physiology </option>
 
-                         <option value="">Animal Production </option>
-                         <option value=""> The Center for Sustainable Dryland Ecosystems and Societies</option>
+                         <option value="Animal Production">Animal Production </option>
+                         <option value="The Center for Sustainable Dryland Ecosystems and Societies"> The Center for Sustainable Dryland Ecosystems and Societies</option>
 
-                         <option value=""> Plant Science and Crop Protection</option>
-                         <option value="">Land Resource Management & Agricultural Technology </option>
+                         <option value="Plant Science and Crop Protection"> Plant Science and Crop Protection</option>
+                         <option value="Land Resource Management & Agricultural Technology">Land Resource Management & Agricultural Technology </option>
 
-                         <option value="">Food Science, Nutrition and Technology </option>
-                         <option value=""> Field Station</option>
+                         <option value="Food Science, Nutrition and Technology ">Food Science, Nutrition and Technology </option>
+                         <option value="Field Station"> Field Station</option>
 
                      </select>
                  </div>
