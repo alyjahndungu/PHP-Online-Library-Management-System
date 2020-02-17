@@ -8,9 +8,9 @@
             </style>
 			<nav id="sidebar" class="mask rgba-gradient align-items-center">
 			<div class="p-4">
-	        <ul class="list-unstyled components mb-5">
-                <hr>
 
+	        <ul class="list-unstyled components mb-5">
+               <hr>
 	          <li class="active">
 	          <a href="dashboard.php" class=" link text-white  waves-effect"> <span class="fas fa-tachometer-alt mr-3 fa-2x"></span>Dashboard</a>
 	          </li>

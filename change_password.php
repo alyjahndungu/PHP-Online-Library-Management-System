@@ -1,16 +1,25 @@
 
 <?php
-
 session_start();
 require_once "dbconnection.php";
-$user_mail = mysqli_real_escape_string($conn, $_POST['user_mail']);
+$user_email = $_POST['user_email'];
 $current_password = mysqli_real_escape_string($conn, $_POST['current_password']);
 $new_password = mysqli_real_escape_string($conn, $_POST['new_password']);
 $new_password = md5($new_password);
 $confirm_password = mysqli_real_escape_string($conn, $_POST['confirm_password']);
 $confirm_password = md5($confirm_password);
-$result = "SELECT * FROM users WHERE email = '$user_mail' and password = '".md5($current_password)."'";
-$row = mysqli_fetch_assoc($result);
+if (isset($_POST['submit'])) {
+  $result = "SELECT * FROM users WHERE email = '$user_email' and password = '".md5($current_password)."'";
+if ( $new_password == $confirm_password ) {
+     $query = "UPDATE users SET password = '$new_password' WHERE email = '$user_email'";
+     mysqli_query($conn, $query);
+     $message = "Password Successfully changed!!!";
+     echo "<script type='text/javascript'>alert('$message');</script>";
+}else {
+  echo "Passwords dont match";
+}
+}
+
 
 
 
