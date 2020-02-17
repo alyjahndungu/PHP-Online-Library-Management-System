@@ -1,11 +1,3 @@
-
-<?php
-require_once ('dbconnection.php');
-
-$query = "SELECT * from `students`";
-$result1 = mysqli_query($conn, $query);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,81 +60,118 @@ $result1 = mysqli_query($conn, $query);
   </nav>
   <!--Navbar -->
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-2">
+      <div class="row">
+  <div class="col-md-2">
         <?php include_once('sidebar.php') ?>
       </div>
 
-      <div class="col-lg-10">
-      <div class="row">
-     
-          <div class="col-md-12">
-<!-- Editable table -->
+      <div class="col-md-9">
+      <div class="col-md-12">
+       <!-- Editable table -->
 <div class="card">
-  <h3 class="card-header text-center font-weight-bold text-uppercase py-4 wow fadeInDown text-danger"><em>AZAHUB</em> - View All Students</h3>
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">View All Issued Books</h3>
   <div class="card-body">
     <div id="table" class="table-editable">
+      <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+            class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
       <table class="table table-bordered table-responsive-md table-striped text-center">
         <thead>
           <tr>
-          <th class="text-center text-secondary">ID</th>
-            <th class="text-center text-secondary">Student ID</th>
-            <th class="text-center text-secondary">Firstname</th>
-            <th class="text-center text-secondary">Lastname</th>
-            <th class="text-center text-secondary">Sirname</th>
-            <th class="text-center text-secondary">Email</th>
-            <th class="text-center text-secondary">Course</th>
-            <th class="text-center text-secondary">Year</th>
-            <th class="text-center text-secondary">Phone</th>
-            <th class="text-center text-secondary">Address</th> 
-            <th class="text-center text-secondary">Department</th>
-            <th class="text-center text-secondary">Gender</th>       
+            <th class="text-center">Person Name</th>
+            <th class="text-center">Age</th>
+            <th class="text-center">Company Name</th>
+            <th class="text-center">Country</th>
+            <th class="text-center">City</th>
+            <th class="text-center">Sort</th>
+            <th class="text-center">Remove</th>
           </tr>
         </thead>
         <tbody>
-        <?php while($row1 = mysqli_fetch_array($result1)):;?>
-            <tr>
-                <td><?php echo $row1[0];?></td>
-                <td><?php echo $row1[1];?></td>
-                <td><?php echo $row1[2];?></td>
-                <td><?php echo $row1[3];?></td>
-                <td><?php echo $row1[4];?></td>
-                <td><?php echo $row1[5];?></td>
-                <td><?php echo $row1[6];?></td>
-                <td><?php echo $row1[7];?></td>
-                <td><?php echo $row1[8];?></td>
-                <td><?php echo $row1[9];?></td>
-                <td><?php echo $row1[10];?></td>
-                <td><?php echo $row1[13];?></td>
-
-
-            </tr>
-            <?php endwhile;?>
+          <tr>
+            <td class="pt-3-half" contenteditable="true">Aurelia Vega</td>
+            <td class="pt-3-half" contenteditable="true">30</td>
+            <td class="pt-3-half" contenteditable="true">Deepends</td>
+            <td class="pt-3-half" contenteditable="true">Spain</td>
+            <td class="pt-3-half" contenteditable="true">Madrid</td>
+            <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                    aria-hidden="true"></i></a></span>
+              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                    aria-hidden="true"></i></a></span>
+            </td>
+            <td>
+              <span class="table-remove"><button type="button"
+                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+            </td>
+          </tr>
+          <!-- This is our clonable table line -->
+          <tr>
+            <td class="pt-3-half" contenteditable="true">Guerra Cortez</td>
+            <td class="pt-3-half" contenteditable="true">45</td>
+            <td class="pt-3-half" contenteditable="true">Insectus</td>
+            <td class="pt-3-half" contenteditable="true">USA</td>
+            <td class="pt-3-half" contenteditable="true">San Francisco</td>
+            <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                    aria-hidden="true"></i></a></span>
+              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                    aria-hidden="true"></i></a></span>
+            </td>
+            <td>
+              <span class="table-remove"><button type="button"
+                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+            </td>
+          </tr>
+          <!-- This is our clonable table line -->
+          <tr>
+            <td class="pt-3-half" contenteditable="true">Guadalupe House</td>
+            <td class="pt-3-half" contenteditable="true">26</td>
+            <td class="pt-3-half" contenteditable="true">Isotronic</td>
+            <td class="pt-3-half" contenteditable="true">Germany</td>
+            <td class="pt-3-half" contenteditable="true">Frankfurt am Main</td>
+            <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                    aria-hidden="true"></i></a></span>
+              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                    aria-hidden="true"></i></a></span>
+            </td>
+            <td>
+              <span class="table-remove"><button type="button"
+                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+            </td>
+          </tr>
+          <!-- This is our clonable table line -->
+          <tr class="hide">
+            <td class="pt-3-half" contenteditable="true">Elisa Gallagher</td>
+            <td class="pt-3-half" contenteditable="true">31</td>
+            <td class="pt-3-half" contenteditable="true">Portica</td>
+            <td class="pt-3-half" contenteditable="true">United Kingdom</td>
+            <td class="pt-3-half" contenteditable="true">London</td>
+            <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                    aria-hidden="true"></i></a></span>
+              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                    aria-hidden="true"></i></a></span>
+            </td>
+            <td>
+              <span class="table-remove"><button type="button"
+                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
   </div>
 </div>
 <!-- Editable table -->
-          
-          </div>
-        
       </div>
-
       </div>
-    </div>
-
+      </div>
+  </div>  
 
   <?php include_once('footer.php'); ?>
-  <script>
-       //wow amination
-
-    new WOW().init();
-
-    //slide
-    $(document).foundation();
-
-    const $tableID = $('#table');
+     <script>
+         const $tableID = $('#table');
  const $BTN = $('#export-btn');
  const $EXPORT = $('#export');
 
@@ -229,8 +258,8 @@ $result1 = mysqli_query($conn, $query);
    // Output the result
    $EXPORT.text(JSON.stringify(data));
  });
-  </script>
-
+       //wow amination
+    new WOW().init();
+    </script>
 </body>
-
 </html>

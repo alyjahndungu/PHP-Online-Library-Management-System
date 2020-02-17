@@ -19,11 +19,6 @@ if ( $new_password == $confirm_password ) {
   echo "Passwords dont match";
 }
 }
-
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

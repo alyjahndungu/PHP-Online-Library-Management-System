@@ -1,7 +1,37 @@
+<?php
+require_once "dbconnection.php";
+if (isset($_POST['submit'])) {
+$isbn = mysqli_real_escape_string($conn, $_POST['isbn']);
+$author= mysqli_real_escape_string($conn, $_POST['author']);
 
+$booktitle = mysqli_real_escape_string($conn, $_POST['booktitle']);
+$category = mysqli_real_escape_string($conn, $_POST['category']);
+
+$country  = mysqli_real_escape_string($conn, $_POST['country']);
+$publisher = mysqli_real_escape_string($conn, $_POST['publisher']);
+
+$edition  = mysqli_real_escape_string($conn, $_POST['edition']);
+$google_url = mysqli_real_escape_string($conn, $_POST['google_url']);
+
+$price  = mysqli_real_escape_string($conn, $_POST['price']);
+$book_Image = mysqli_real_escape_string($conn, $_POST['book_Image']);
+
+if (empty($student_id)|| empty( $firstname) || empty( $lastname)|| empty($sirname)|| empty( $email)|| empty($course) ||
+      empty($year)|| empty($phone)|| empty($address) || empty($department)|| empty($city) || empty($state)|| empty($gender)){
+   echo "fill all the spaces";
+  }else{
+      
+      $query = "INSERT INTO `students`(`student_id`, `firstname`, `lastname`, `sirname`, `email`, `course_name`, `course_year`, `phone_no`, `address`, `department`, `city`, `state_name`, `gender`) 
+      VALUES('$student_id','$firstname','$lastname', '$sirname', '$email', '$course','$year','$phone','$address','$department','$city','$state','$gender')";
+mysqli_query($conn, $query);
+$_SESSION['firstname'] = $fname;
+$_SESSION['success'] = "Succesifully Added" .mysqli_error($conn);
+header('location: dashboard.php');
+}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
@@ -12,7 +42,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
-
   <!--custom fonts-->
   <style>
     @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
@@ -141,7 +170,7 @@
                         
                         <div class="form-group">
                           <label for="" class=" white-text">Google Book URL</label>
-                          <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <input type="text" name="google_url" id="" class="form-control" placeholder="" aria-describedby="helpId">
                         </div>
 
                         <div class="form-group">
@@ -155,7 +184,7 @@
                         <span class="input-group-text" id="inputGroupFileAddon01">Upload Book Image</span>
                         </div>
                         <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                        <input type="file" name="book_Image" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                          </div>
                          </div>
@@ -186,4 +215,3 @@
 
 </body>
 
-</html>
