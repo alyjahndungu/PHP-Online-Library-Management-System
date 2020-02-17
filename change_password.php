@@ -1,34 +1,21 @@
-<?php
-require_once 'dbconnection.php';
-if (isset($_POST['submit'])) : extract($_POST); 
-if ($old_pass !="" && $new_pass != "" && $confirm_pass != "") : $user_id = '1';
-$old_pwd=md5(mysqli_real_escape_string($db,$_POST['current_pass']));
-$pwd=md5(mysqli_real_escape_string($db,$_POST['new_pass']));
-$c_pwd=md5(mysqli_real_escape_string($db,$_POST['confirm_pass']));
-if($pwd == $c_pwd) :if($pwd!=$old_pwd) :
-    $sql="SELECT * FROM `users` WHERE `id`='$user_id' AND `password` ='$old_pwd'";
-    $db_check=$db->query($sql);
-    $count=mysqli_num_rows($db_check);
-  if($count==1) :
-    $fetch=$db->query("UPDATE `users` SET `password` = '$pwd' WHERE `id`='$user_id'");
-    $current_pass=''; $password =''; $confirm_pwd = '';
-    $msg_sucess = "Your new password update successfully.";
-  else:
-    $error = "The password you gave is incorrect.";
-  endif;
-  else :
-    $error = "Old password new password same Please try again.";
-  endif;
-  else:
-    $error = "New password and confirm password do not matched";
-  endif;
-  else :
-    $error = "Please fil all the fields";
-  endif;   
-  endif;
-    
-?>
 
+<?php
+
+session_start();
+require_once "dbconnection.php";
+$user_mail = mysqli_real_escape_string($conn, $_POST['user_mail']);
+$current_password = mysqli_real_escape_string($conn, $_POST['current_password']);
+$new_password = mysqli_real_escape_string($conn, $_POST['new_password']);
+$new_password = md5($new_password);
+$confirm_password = mysqli_real_escape_string($conn, $_POST['confirm_password']);
+$confirm_password = md5($confirm_password);
+$result = "SELECT * FROM users WHERE email = '$user_mail' and password = '".md5($current_password)."'";
+$row = mysqli_fetch_assoc($result);
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,24 +39,39 @@ if($pwd == $c_pwd) :if($pwd!=$old_pwd) :
 
 <body style="background-color: slategray">
      <div class="container-fluid">
+       <div class="row">
+       <div class="col-md-4"></div>
+       <div class="col-md-4">
+       <h1 class="h1 text-center cyan-text"> <strong>Azahub </strong> Online Library System</h1>
+       <hr>
+         <h4 class="h4 text-center text-warning">Change Password</h4>
+         <hr>
+       </div>
+       <div class="col-md-4"></div>
+       
+       </div>
          <div class="row">
              <div class="col-md-4"></div>
              <div class="col-md-4">
     <form action="" method="post">
-        <div class="form-group">
-          <label for="">Current Password</label>
-          <input type="password" class="form-control" name="current_pass" id="" placeholder="Current Password">
+    <div class="form-group">
+          <label for="" class="lime-text">Email</label>
+          <input type="email" class="form-control" name="user_email" id="" placeholder="User Email">
         </div>
         <div class="form-group">
-        <label for="">New Password</label>
-          <input type="password" class="form-control" name="new_pass" id="" placeholder="New Password">
+          <label for="" class="lime-text">Current Password</label>
+          <input type="password" class="form-control" name="current_password" id="" placeholder="Current Password">
         </div>
         <div class="form-group">
-        <label for="">Confirm New Password</label>
-          <input type="password" class="form-control" name="confirm_pass" id="" placeholder="Confirm Password">
+        <label for="" class="lime-text">New Password</label>
+          <input type="password" class="form-control" name="new_password" id="" placeholder="New Password">
+        </div>
+        <div class="form-group">
+        <label for="" class="lime-text">Confirm New Password</label>
+          <input type="password" class="form-control" name="confirm_password" id="" placeholder="Confirm Password">
         </div>
 
-        <button type="submit" name="submit" class="btn btn-primary">Change Password</button>
+        <button type="submit" name="submit" class="btn rounded-pill btn-outline-cyan">Change Password</button>
     </form>
 
              </div>

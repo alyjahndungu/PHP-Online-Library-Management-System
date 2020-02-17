@@ -91,35 +91,36 @@
                  </div>
 
                  <div class="col-md-9">
-                 <h4 class="card-title white-text text-center "><a> <strong> Add </strong>Book </a></h4>
+                 <h4 class="card-title white-text text-center "> <i class="fas fa-book fa-2x green-text "></i><a> <strong> Add </strong>Book </a></h4>
+                 <hr>
                      <form action="" method="post" style="padding-left: 100px">
              
                      <div class="row">
                          <div class="col-sm-6">
 
                         <div class="form-group">
-                          <label for="">I.S.B.N</label>
+                          <label for="" class=" white-text">I.S.B.N</label>
                           <input type="text" name="isbn" id="" class="form-control" placeholder="Enter ISBN" aria-describedby="helpId">
                         </div>
 
                         <div class="form-group">
-                          <label for="">Author Name</label>
+                          <label for="" class=" white-text">Author Name</label>
                           <input type="text" name="author" id="" class="form-control" placeholder="" aria-describedby="helpId">
                         </div>
                           
 
                         <div class="form-group">
-                          <label for="">Book Title</label>
+                          <label for="" class=" white-text">Book Title</label>
                           <input type="text" name="booktitle" id="" class="form-control" placeholder="" aria-describedby="helpId">
                         </div>
 
                           <div class="form-group">
-                          <label for="">Category</label>
+                          <label for="" class=" white-text">Category</label>
                           <input type="text" name="category" id="" class="form-control" placeholder="" aria-describedby="helpId">
                           </div>
 
                           <div class="form-group">
-                          <label for="">Country of Publishment</label>
+                          <label for="" class=" white-text">Country of Publishment</label>
                           <input type="text" name="country" id="" class="form-control" placeholder="" aria-describedby="helpId">
                         </div>
         
@@ -129,26 +130,26 @@
                          <div class="col-sm-6">
 
                         <div class="form-group">
-                          <label for="">Publisher</label>
+                          <label for="" class=" white-text">Publisher</label>
                           <input type="text" name="publisher" id="" class="form-control" placeholder="" aria-describedby="helpId">
                         </div>
                     
                         <div class="form-group">
-                          <label for="">Book Edition</label>
+                          <label for="" class=" white-text">Book Edition</label>
                           <input type="text" name="edition" id="" class="form-control" placeholder="" aria-describedby="helpId">
                         </div>
                         
                         <div class="form-group">
-                          <label for="">Google Book URL</label>
+                          <label for="" class=" white-text">Google Book URL</label>
                           <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
                         </div>
 
                         <div class="form-group">
-                          <label for="">Price</label>
+                          <label for="" class=" white-text">Price</label>
                           <input type="text" name="price" id="" class="form-control" placeholder="" aria-describedby="helpId">
                         </div>
                         
-                        <label for="">Upload Image</label>
+                        <label for="" class=" white-text">Upload Image</label>
                         <div class="input-group">
                         <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroupFileAddon01">Upload Book Image</span>

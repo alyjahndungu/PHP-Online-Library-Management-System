@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
@@ -73,6 +72,8 @@
         <li class="breadcrumb-item"><a href="add_student.php">Add Student</a></li>
     </ol>
  </nav>
+ <h4 class="card-title white-text text-center "> <i class="fas fa-user-cog fa-2x text-white "></i><a> <strong> Add </strong>New  Students </a></h4>
+<hr>
             <!--form for add students-->
             <form action="insert_student.php" method="post"  p-5 class="wow shake">
              <div class="row">
@@ -200,14 +201,14 @@
                      <div class="form-check">
                          <label class="form-check-label">
                          <input type="radio" class="form-check-input" name="gender" id="" value="male" checked="checked">
-                       <i class="fas fa-male  "></i>  Male
+                       <i class="fas fa-male blue-text"></i> <span class="text-white"> Male</span>  
                        </label>
                      </div>
 
                      <div class="form-check">
                          <label class="form-check-label">
                          <input type="radio" class="form-check-input" name="gender" id="" checked="checked" value="female">
-                     <i class="fas fa-female"></i>    Female
+                     <i class="fas fa-female blue-text"></i>   <span class="text-white">Female</span> 
                        </label>
                      </div>
 

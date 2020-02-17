@@ -52,60 +52,52 @@ if( $rows ==1 )
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <hr>
-                <h1 class="text-center white-text"><strong>Azahub O-Library System</strong></strong> </h1>
+            <hr> 
+            <h1 class="text-center text-info wow rotateIn"><strong>Online - Library System</strong></strong> </h1>
             </div>
             <div class="col-sm-4"></div>
-        </div>
-        <div class="row">
+            </div>
+            <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
 
                 <!-- Default form login -->
-                <form class="text-center border border-warning p-5 wow rotateIn" method="post" action="login.php">
-
-                    <p class="h4 mb-4 cyan-text text-uppercase">Sign in</p>
-                    <hr>
-                    <div class="form-group">
-                         <input type="text" name="_username" id=""  class="form-control my-4 rounded-pill text-center" placeholder=" Username" aria-describedby="helpId">
-                    </div>
-                    <!-- Password -->
-                    <input type="password" name="_password" id="defaultLoginFormPassword" class="form-control mb-4 rounded-pill  text-center" placeholder="Password">
-
-                    <div class="d-flex justify-content-around">
-                        <div>
+    <form class="text-center border border-warning p-5 wow rotateIn" method="post" action="login.php">
+    <p class="h4 mb-4 cyan-text text-uppercase">Sign in</p>
+    <hr>
+    <div class="form-group">
+    <input type="text" name="_username" id=""  class="form-control my-4 rounded-pill text-center" placeholder=" Username" aria-describedby="helpId">
+    </div>
+    <!-- Password -->
+    <input type="password" name="_password" id="defaultLoginFormPassword" class="form-control mb-4 rounded-pill  text-center" placeholder="Password">
+    <div class="d-flex justify-content-around">
+    <div>
                             <!-- Remember me -->
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                                <label class="custom-control-label white-text" for="defaultLoginFormRemember">Remember me</label>
-                            </div>
-                        </div>
-                        <div>
-                            <!-- Forgot password -->
-                            <a href="" class="lime-text">Forgot password?</a>
-                        </div>
-                    </div>
-
-                    <!-- Sign in button -->
-                    <button class="btn btn-outline-cyan rounded-pill btn-block my-4" name="login" type="submit">Sign in</button>
-
-                    <!-- Register -->
-                    <p class="white-text">Not a member?
-                        <a href="register.php" class="lime-text">Register</a>
-                    </p>
-
-                </form>
-                <!-- Default form login -->
-            </div>
-
+    <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+    <label class="custom-control-label white-text" for="defaultLoginFormRemember">Remember me</label>
+    </div>
+    </div>
+    <div>
+            <!-- Forgot password -->
+    <a href="" class="lime-text">Forgot password?</a>
+    </div>
+    </div>
+    <!-- Sign in button -->
+    <button class="btn btn-outline-cyan rounded-pill btn-block my-4" name="login" type="submit">Sign in</button>
+    <!-- Register -->
+    <p class="white-text">Not a member?
+    <a href="register.php" class="lime-text">Register</a>
+    </p>
+   </form>
+        <!-- Default form login -->
+    </div>
             <div class="col-sm-4"></div>
         </div>
     </div>
     <script>
         //wow amination
         new WOW().init();
-        //slide
-        $(document).foundation();
     </script>
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -117,5 +109,3 @@ if( $rows ==1 )
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
 
 </body>
-
-</html>

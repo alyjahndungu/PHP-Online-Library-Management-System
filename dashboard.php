@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
@@ -108,7 +107,6 @@
               <div class="card-body">
                 <h4 class="card-title  brown-text text-center"><a>1223</a></h4>
                 <p class="card-text pink-text text-center">Total Books</p>
-
               </div>
             </div>
           </div>
@@ -131,16 +129,42 @@
               </div>
           </div>
         </div>
-<div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-
+ </div>
+ <hr>
+ <div class="row" >
+  <div class="col-md-3">
+  <div class="card wow fadeInLeft">
+              <div class="card-body">
+                <h4 class="card-title  green-text text-center"><a>4</a></h4>
+                <p class="card-text pink-text text-center">Logged User</p>
+              </div>
+            </div>
   </div>
-  <div class="col-md-2"></div>
+  <div class="col-md-3">
+  <div class="card wow fadeInLeft">
+              <div class="card-body">
+                <h4 class="card-title  green-text text-center"><a>6</a></h4>
+                <p class="card-text pink-text text-center">Working Hours</p>
+              </div>
+            </div>
+  </div>
+  <div class="col-md-3">
+  <div class="card wow fadeInLeft">
+              <div class="card-body">
+                <h4 class="card-title  green-text text-center"><a>77 Hours</a></h4>
+                <p class="card-text pink-text text-center">Worked Hours per Week</p>
+              </div>
+            </div>
+  </div>
+  <div class="col-md-3">
+  <div class="card wow fadeInLeft">
+              <div class="card-body">
+                <h4 class="card-title  green-text text-center"><a>227 Hours</a></h4>
+                <p class="card-text pink-text text-center">Worked Hours per Week</p>
+              </div>
+            </div>
+  </div>
 </div>
-
-
-      </div>
 
 
     </div>
@@ -152,9 +176,9 @@
   new Chart(document.getElementById("horizontalBar"), {
 "type": "horizontalBar",
 "data": {
-"labels": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey"],
+"labels": ["Programming", "Medical", "Science", "Business", "Novels", "Magazines", "Social Relations"],
 "datasets": [{
-"label": "My First Dataset",
+"label": "Borrowed Books",
 "data": [22, 33, 55, 12, 86, 23, 14],
 "fill": false,
 "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
@@ -188,7 +212,7 @@ type: 'line',
 data: {
 labels: ["January", "February", "March", "April", "May", "June", "July", "August" , "September" , "Octomber"],
 datasets: [{
-label: "My First dataset",
+label: "Returned Books",
 data: [65, 59, 80, 81, 56, 55, 65, 75, 66, 54, 55,43],
 backgroundColor: [
 'rgba(105, 0, 132, .2)',
@@ -199,7 +223,7 @@ borderColor: [
 borderWidth: 2
 }, 
 {
-label: "My Second dataset",
+label: "New Books",
 data: [28, 48, 40, 19, 86, 27, 90, 78, 77, 88, 54, 70],
 backgroundColor: [
 'rgba(0, 137, 132, .2)',
