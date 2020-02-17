@@ -125,6 +125,10 @@
           <div class="card wow bounceInUp">
               <div class="card-body">
               <canvas id="horizontalBar"></canvas>
+              <div class="card-body">
+                <h4 class="card-title  green-text text-center"><a>Most Borrowed Books</a></h4>
+                <p class="card-text pink-text text-center">Showng the Most Borrow rates</p>
+              </div>
               </div>
           </div>
         </div>

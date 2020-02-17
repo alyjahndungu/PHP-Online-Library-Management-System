@@ -33,7 +33,7 @@
               <a href="issue_book.php" class=" link text-white  waves-effect"><span class="fa fa-swatchbook mr-3 fa-2x"></span> Issue Books</a>
               </li>
               <li>
-              <a href="#" class=" link text-white  waves-effect"><span class="fa fa-binoculars mr-3 fa-2x"></span> All Issued Books</a>
+              <a href="view_all_issuedBooks.php" class=" link text-white  waves-effect"><span class="fa fa-binoculars mr-3 fa-2x"></span> All Issued Books</a>
              </li>    
               <li>
               <a href="#" class=" link text-white  waves-effect"><span class="fa fa-street-view mr-3 fa-2x"></span> View Bookings</a>
@@ -48,10 +48,13 @@
               <a href="#" class=" link text-white  waves-effect"><span class="fas fa-cogs mr-3 fa-2x"></span> Manage Courses</a>
               </li>
               <li>
+              <a href="#" class=" link text-white  waves-effect"><span class="fas fa-cogs mr-3 fa-2x"></span> Add Book Category</a>
+              </li>
+              <li>
               <a href="#" class=" link text-white  waves-effect"><span class="fas fa-calendar-plus mr-3 fa-2x"></span> Manage Years</a>
               </li>
               <li>
-              <a href="#" class=" link text-white  waves-effect"><span class="fab fa-affiliatetheme mr-3 fa-2x"></span> About Software</a>
+              <a href="about.php" class=" link text-white  waves-effect"><span class="fab fa-affiliatetheme mr-3 fa-2x"></span> About Software</a>
 	          </li>
 	        </ul>
 	      </div>
