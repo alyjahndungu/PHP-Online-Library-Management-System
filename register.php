@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL^E_WARNING);
 require_once 'dbconnection.php';
+require_once 'functons.php';
 if (isset($_POST['register'])) {
   $fname = mysqli_real_escape_string($conn, $_POST['fname']);
   $lname = mysqli_real_escape_string($conn, $_POST['lname']);
@@ -16,9 +17,28 @@ if (isset($_POST['register'])) {
         echo "<script type='text/javascript'>alert('$message');</script>";
       }else{
        $password = md5($password);
-       $query = "INSERT INTO `users`(`firstname`, `lastname`, `username`, `email`, `password`, `phone`) 
-       VALUES('$fname', '$lname','$user_name', '$email', '$password', '$phone')";
-       mysqli_query($conn, $query);
+       $code = rand(1111, 99999);
+
+       // check from database for duplicate record
+     $duplicate = mysqli_query($db,"SELECT * FROM `users` WHERE `username` = '$username'");
+     if(mysqli_num_rows($duplicate ) > 0){
+     die("Username is taken, please try another one.");
+      }
+       $query = "INSERT INTO `users`(`firstname`, `lastname`, `username`, `email`, `password`, `phone` ,`code`) 
+       VALUES('$fname', '$lname','$user_name', '$email', '$password','$phone','$code')";
+        mysqli_query($conn, $query);
+       if($query)
+       {
+
+        $meMessage = "Hello ".$username.".Your Verification Code is ".$code;
+        $sms = new smsAPP();
+        $sms->sendMessage($phone,$meMessage);
+       
+      
+       }else {
+        echo mysqli_error($conn);
+       }
+      
        $_SESSION['success'] = "Succesifully Added" .mysqli_error($conn);
        header('location: login.php');
     }

@@ -76,7 +76,7 @@
             class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
       <table class="table table-bordered table-responsive-md table-striped text-center">
         <thead>
-          <tr>
+        <tr>
             <th class="text-center">Person Name</th>
             <th class="text-center">Age</th>
             <th class="text-center">Company Name</th>
@@ -87,7 +87,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+        <tr>
             <td class="pt-3-half" contenteditable="true">Aurelia Vega</td>
             <td class="pt-3-half" contenteditable="true">30</td>
             <td class="pt-3-half" contenteditable="true">Deepends</td>

@@ -10,7 +10,7 @@ if(isset($_POST['_username']))
     $query = "SELECT * FROM `users` WHERE `username`='$UserName' AND `password`='".md5($Password)."'";
     $result = mysqli_query($conn,$query);
     $rows = mysqli_num_rows($result);
-if( $rows ==1 )
+if( $rows == 1 )
      {
  $_SESSION['_username']=$row['username'];
  header("Location: dashboard.php");

@@ -90,11 +90,8 @@ header('location: dashboard.php');
   <!--/.Navbar -->
 
   <div class="container-fluid">
-
-
     <div class="row">
       <div class="col-md-2">
-     
         <?php include_once('sidebar.php') ?>
       </div>
 

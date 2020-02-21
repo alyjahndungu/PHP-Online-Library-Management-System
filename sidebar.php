@@ -21,7 +21,7 @@
               <a href="#" class=" link text-white  waves-effect"><span class="fas fa-chess mr-3 fa-2x"></span>Edit Books</a>
 	          </li>
 	          <li>
-              <a href="#" class=" link text-white  waves-effect"><span class="fas fa-book  mr-3 fa-2x"></span>Remove Books</a>
+              <a href="delete_books.php" class=" link text-white  waves-effect"><span class="fas fa-book  mr-3 fa-2x"></span>Delete Books</a>
 	          </li>
 	          <li>
               <a href="#" class=" link text-white  waves-effect"><span class="fas fa-hand-holding-usd mr-3 fa-2x"></span> View Fines</a>
