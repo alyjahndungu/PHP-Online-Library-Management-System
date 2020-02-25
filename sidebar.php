@@ -48,7 +48,7 @@
               <a href="manage_courses.php" class=" link text-white  waves-effect"><span class="fas fa-cogs mr-3 fa-2x"></span> Manage Courses</a>
               </li>
               <li>
-              <a href="#" class=" link text-white  waves-effect"><span class="fas fa-cogs mr-3 fa-2x"></span> Add Book Category</a>
+              <a href="add_book_category.php" class=" link text-white  waves-effect"><span class="fas fa-cogs mr-3 fa-2x"></span> Add Book Category</a>
               </li>
               <li>
               <a href="#" class=" link text-white  waves-effect"><span class="fas fa-calendar-plus mr-3 fa-2x"></span> Manage Years</a>
