@@ -67,6 +67,7 @@
 
       <div class="col-md-9">
       <div class="col-md-12">
+    
        <!-- Editable table -->
 <div class="card">
   <h3 class="card-header text-center font-weight-bold text-uppercase py-4">View All Issued Books</h3>

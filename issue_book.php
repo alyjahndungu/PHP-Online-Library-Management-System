@@ -66,12 +66,12 @@
       </div>
 
       <div class="col-lg-9">
-      <nav aria-label="breadcrumb">
+    <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Manage Books</a></li>
-        <li class="breadcrumb-item"><a href="#">Add Books</a></li>
+    <li class="breadcrumb-item"><a href="#">Manage Books</a></li>
+    <li class="breadcrumb-item"><a href="#">Add Books</a></li>
     </ol>
- </nav>
+    </nav>
 
              <div class="row">
                  <div class="col-sm-3">

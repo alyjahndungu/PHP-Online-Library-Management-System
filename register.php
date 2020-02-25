@@ -18,6 +18,7 @@ if (isset($_POST['register'])) {
       }else{
        $password = md5($password);
        $code = rand(1111, 99999);
+       $formatPhone  = "+254".substr($phone,-9);
 
        // check from database for duplicate record
      $duplicate = mysqli_query($db,"SELECT * FROM `users` WHERE `username` = '$username'");
@@ -25,20 +26,11 @@ if (isset($_POST['register'])) {
      die("Username is taken, please try another one.");
       }
        $query = "INSERT INTO `users`(`firstname`, `lastname`, `username`, `email`, `password`, `phone` ,`code`) 
-       VALUES('$fname', '$lname','$user_name', '$email', '$password','$phone','$code')";
+       VALUES('$fname', '$lname','$user_name', '$email', '$password','  $formatPhone ','$code')";
         mysqli_query($conn, $query);
-       if($query)
-       {
-
         $meMessage = "Hello ".$username.".Your Verification Code is ".$code;
         $sms = new smsAPP();
-        $sms->sendMessage($phone,$meMessage);
-       
-      
-       }else {
-        echo mysqli_error($conn);
-       }
-      
+        $sms->sendMessage($formatPhone,$meMessage);
        $_SESSION['success'] = "Succesifully Added" .mysqli_error($conn);
        header('location: login.php');
     }

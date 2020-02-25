@@ -16,20 +16,19 @@ $google_url = mysqli_real_escape_string($conn, $_POST['google_url']);
 $price  = mysqli_real_escape_string($conn, $_POST['price']);
 $book_Image = mysqli_real_escape_string($conn, $_POST['book_Image']);
 
-if (empty($student_id)|| empty( $firstname) || empty( $lastname)|| empty($sirname)|| empty( $email)|| empty($course) ||
-      empty($year)|| empty($phone)|| empty($address) || empty($department)|| empty($city) || empty($state)|| empty($gender)){
+if (empty($isbn)|| empty($author) || empty($booktitle )|| empty($category)|| empty($country)|| empty($publisher ) ||
+      empty($edition)|| empty($google_url)|| empty($price) || empty($book_Image)){
    echo "fill all the spaces";
   }else{
       
-      $query = "INSERT INTO `students`(`student_id`, `firstname`, `lastname`, `sirname`, `email`, `course_name`, `course_year`, `phone_no`, `address`, `department`, `city`, `state_name`, `gender`) 
-      VALUES('$student_id','$firstname','$lastname', '$sirname', '$email', '$course','$year','$phone','$address','$department','$city','$state','$gender')";
+      $query = "INSERT INTO `bookss`(`book_isbn`, `author`, `book_title`, `category`, `country`, `publisher`, `edition`, `google_url`, `price`, `book_image`) 
+      VALUES('$isbn','$author','$booktitle', '$category', '$country', '$publisher','$edition','$google_url','$price','$book_Image')";
 mysqli_query($conn, $query);
-$_SESSION['firstname'] = $fname;
 $_SESSION['success'] = "Succesifully Added" .mysqli_error($conn);
 header('location: dashboard.php');
 }
 }
-?>
+?>  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -188,7 +187,7 @@ header('location: dashboard.php');
                         </div>
                         </div>
 
-                        <button type="submit" class="btn btn-outline-white waves-effect rounded-pill btn-block">Add Book</button>
+                        <button type="submit" name="submit" class="btn btn-outline-white waves-effect rounded-pill btn-block">Add Book</button>
                      </form>
                  </div>
              </div>

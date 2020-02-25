@@ -13,7 +13,7 @@ if(isset($_POST['_username']))
 if( $rows == 1 )
      {
  $_SESSION['_username']=$row['username'];
- header("Location: dashboard.php");
+ header("location: dashboard.php");
  exit;
   }
   else
