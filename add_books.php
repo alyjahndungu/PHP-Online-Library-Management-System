@@ -118,7 +118,7 @@ header('location: dashboard.php');
                  <div class="col-md-9">
                  <h4 class="card-title white-text text-center "> <i class="fas fa-book fa-2x green-text "></i><a> <strong> Add </strong>Book </a></h4>
                  <hr>
-                     <form action="" method="post" style="padding-left: 100px">
+                     <form action="" method="post" class="wow slideInDown" style="padding-left: 100px">
              
                      <div class="row">
                          <div class="col-sm-6">
