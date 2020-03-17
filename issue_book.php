@@ -14,7 +14,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
   <!--custom fonts-->
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow|Lato|Source+Code+Pro|Varela+Round&display=swap');
 </style>
   <link rel="stylesheet" href="css/custom.css">
   <!-- JQuery -->
@@ -29,7 +29,7 @@
   </title>
 </head>
 
-<body style="background-color:slategray">
+<body style="background-color:#f8f8fd; font-family: 'Varela Round', sans-serif;">
   <!--Navbar -->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark ">
   <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="120rem" width="100rem" alt=""> <span class="text-uppercase text-white" style="padding-left: 400px"> <strong> Online Library Management System</strong></span> 
@@ -60,7 +60,7 @@
 
 
     <div class="row">
-      <div class="col-md-2" style="background-image: url('img/room.webp')">
+      <div class="col-md-2">
      
         <?php include_once('sidebar.php') ?>
       </div>
@@ -78,7 +78,7 @@
                     
                      <div class="row">
                         <div class="col-sm-12">
-                        <h5 class="white-text text-center">Book Image.</h5>
+                        <h5   class="pink-text text-center">Book Image.</h5>
                         <hr>
                           <img  src="img/literature.webp" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"   alt="" style="padding-top: 100px">
                         </div>
@@ -87,35 +87,46 @@
                  </div>
 
                  <div class="col-md-9">
-                 <h4 class="card-title white-text text-left "><a> <strong> Issue </strong>Books </a></h4>
+                 <h4 class="card-title pink-text text-center "><a> <i class="fas fa-book    "></i> <strong> Issue </strong>Books </a></h4>
+                 <hr>
                      <form action="" method="post" style="padding-left: 200px">
              
                      <div class="row">
                          <div class="col-sm-6">
 
                         <div class="form-group">
-                          <label for="" class="yellow-text">Book No.</label>
-                          <input type="text" name="bookno" id="" class="form-control" placeholder="Enter ISBN" aria-describedby="helpId">
+                          <label for="" class="pink-text">Book No.</label>
+                          <input type="text" name="bookno" id="" class="form-control rounded-pill" placeholder="Enter ISBN" aria-describedby="helpId">
                         </div>
 
                         <div class="form-group">
-                          <label for="" class="yellow-text">Book Title</label>
-                          <input type="text" name="booktitle" id="" class="form-control" placeholder="Boo" aria-describedby="helpId">
+                          <label for="" class="pink-text">Book Title</label>
+                          <input type="text" name="booktitle" id="" class="form-control rounded-pill" placeholder="Boo" aria-describedby="helpId">
                         </div>
                           
 
                         <div class="form-group">
-                          <label for="" class="yellow-text">User Id</label>
-                          <input type="text" name="userid" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <label for="" class="pink-text">User Id</label>
+                          <input type="text" name="userid" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
                         </div>
 
                           <div class="form-group">
-                          <label for="" class="yellow-text">Name</label>
-                          <input type="text" name="name" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <label for="" class="pink-text">Name</label>
+                          <input type="text" name="name" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
+                          </div>
+
+                          <div class="form-group">
+                          <label for="" class="pink-text">Name</label>
+                          <input type="text" name="name" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
+                          </div>
+
+                          <div class="form-group">
+                          <label for="" class="pink-text">Name</label>
+                          <input type="text" name="name" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
                           </div>
 
 
-                        <button type="submit" class="btn btn-outline-white waves-effect rounded-pill">Issue Book</button>
+                        <button type="submit" class="btn btn-outline-pink waves-effect rounded-pill">Issue Book</button>
                          </div>
 
                          <div class="col-sm-6"></div></div>

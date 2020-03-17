@@ -2,7 +2,7 @@
 <?php
 session_start();
 require_once "dbconnection.php";
-$user_email = $_POST['user_email'];
+$user_email = mysqli_real_escape_string($conn, $_POST['user_email']);
 $current_password = mysqli_real_escape_string($conn, $_POST['current_password']);
 $new_password = mysqli_real_escape_string($conn, $_POST['new_password']);
 $new_password = md5($new_password);
@@ -35,13 +35,13 @@ if ( $new_password == $confirm_password ) {
     <link rel="stylesheet" href="css/custom.css">
     <!--custom fonts-->
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
-    </style>
+@import url('https://fonts.googleapis.com/css?family=Barlow|Lato|Source+Code+Pro|Varela+Round&display=swap');
+</style>
     <title>O-Library Change Password</title>
     </title>
 </head>
 
-<body style="background-color: slategray">
+<body style="background-color:#f8f8fd; font-family: 'Varela Round', sans-serif;">
      <div class="container-fluid">
        <div class="row">
        <div class="col-md-4"></div>
@@ -60,19 +60,19 @@ if ( $new_password == $confirm_password ) {
     <form action="" method="post">
     <div class="form-group">
           <label for="" class="lime-text">Email</label>
-          <input type="email" class="form-control" name="user_email" id="" placeholder="User Email">
+          <input type="email" class="form-control rounded-pill" name="user_email" id="" placeholder="User Email">
         </div>
         <div class="form-group">
           <label for="" class="lime-text">Current Password</label>
-          <input type="password" class="form-control" name="current_password" id="" placeholder="Current Password">
+          <input type="password" class="form-control rounded-pill" name="current_password" id="" placeholder="Current Password">
         </div>
         <div class="form-group">
         <label for="" class="lime-text">New Password</label>
-          <input type="password" class="form-control" name="new_password" id="" placeholder="New Password">
+          <input type="password" class="form-control rounded-pill" name="new_password" id="" placeholder="New Password">
         </div>
         <div class="form-group">
         <label for="" class="lime-text">Confirm New Password</label>
-          <input type="password" class="form-control" name="confirm_password" id="" placeholder="Confirm Password">
+          <input type="password" class="form-control rounded-pill" name="confirm_password" id="" placeholder="Confirm Password">
         </div>
 
         <button type="submit" name="submit" class="btn rounded-pill btn-outline-cyan">Change Password</button>
@@ -101,3 +101,4 @@ if ( $new_password == $confirm_password ) {
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
 
 </body>
+</html>

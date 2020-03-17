@@ -16,7 +16,7 @@ $phone = mysqli_real_escape_string($conn, $_POST['phone_no']);
 $address  = mysqli_real_escape_string($conn, $_POST['address']);
 $department= mysqli_real_escape_string($conn, $_POST['department']);
 
-$city = mysqli_real_escape_string($conn, $_POST['city']);
+$city = mysqli_real_escape_string($conn, $_POST['city']);   
 $state = mysqli_real_escape_string($conn, $_POST['state_name']);
 $gender  = mysqli_real_escape_string($conn, $_POST['gender']);
 

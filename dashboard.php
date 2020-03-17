@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="css/custom.css">
   <!--custom fonts-->
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
-  </style>
+@import url('https://fonts.googleapis.com/css?family=Barlow|Lato|Source+Code+Pro|Varela+Round&display=swap');
+</style>
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -24,18 +24,18 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
 <main></main>
-  <title>AZAHUB - OLibrary System</title>
+  <title >AZAHUB - OLibrary System </title>
   </title>
 
 
 </head>
 
-<body style="background-color: slategray">
+<body  id="template" style="background-color: #f8f8fd; font-family: 'Varela Round', sans-serif;">
 
 
   <!--Navbar -->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark ">
-    <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="120rem" width="100rem" alt=""> <span class="text-uppercase text-white" style="padding-left: 400px"> <strong> Online Library Management System</strong></span> 
+    <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="120rem" width="100rem" alt=""> <span class="text-uppercase pink-text" style="padding-left: 400px"> <strong> Online Library Management System</strong></span> 
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
          <ul class="navbar-nav ml-auto nav-flex-icons">
          <li class="nav-item dropdown">
          <a class="nav-link dropdown-toggle blue-text" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fas fa-user white-text" display-5></i> <span class="white-text">Manage Account</span>
+         <i class="fas fa-user pink-text" display-5></i> <span class="text-secondary">Manage Account</span>
           </a>
           <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
             <a class="dropdown-item text-primary" href="#"> <i class="fa fa-user" aria-hidden="true"></i> My Profile</a></a>
@@ -72,8 +72,8 @@
           <div class="col-sm-3">
             <div class="card wow fadeInLeft">
               <div class="card-body">
-                <h4 class="card-title  brown-text text-center"><a>1122</a></h4>
-                <p class="card-text pink-text text-center">Today's issued Books</p>
+                <h4 class="card-title  brown-text text-centers"><a>1122</a></h4>
+                <p class="card-text pink-text text-center">Today's issued Books </p>
               </div>
             </div>
           </div>

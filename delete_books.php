@@ -12,12 +12,12 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
   <!--custom fonts-->
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
-  </style>
+@import url('https://fonts.googleapis.com/css?family=Barlow|Lato|Source+Code+Pro|Varela+Round&display=swap');
+</style>
   <link rel="stylesheet" href="css/custom.css">
     <title>Delete Books</title>
 </head>
-<body style="background-color:slategray">
+<body style="background-color:#f8f8fd; font-family: 'Varela Round', sans-serif;">
   <!--Navbar -->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark ">
   <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="120rem" width="100rem" alt=""> <span class="text-uppercase text-white" style="padding-left: 400px"> <strong> Online Library Management System</strong></span> 

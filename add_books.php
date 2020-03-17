@@ -43,8 +43,8 @@ header('location: dashboard.php');
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
   <!--custom fonts-->
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Baskervville|Cormorant|Kaushan+Script|Merienda|Niconne|Tangerine&display=swap');
-  </style>
+@import url('https://fonts.googleapis.com/css?family=Barlow|Lato|Source+Code+Pro|Varela+Round&display=swap');
+</style>
   <link rel="stylesheet" href="css/custom.css">
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -61,10 +61,10 @@ header('location: dashboard.php');
 
 </head>
 
-<body style="background-color:slategray">
+<body style="background-color:#f8f8fd; font-family: 'Varela Round', sans-serif;">
   <!--Navbar -->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark ">
-  <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="120rem" width="100rem" alt=""> <span class="text-uppercase text-white" style="padding-left: 400px"> <strong> Online Library Management System</strong></span> 
+  <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="120rem" width="100rem" alt=""> <span class="text-uppercase pink-text" style="padding-left: 400px"> <strong> Online Library Management System</strong></span> 
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -72,8 +72,8 @@ header('location: dashboard.php');
     <div class="collapse navbar-collapse " id="navbarSupportedContent-333">
          <ul class="navbar-nav ml-auto nav-flex-icons">
          <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fas fa-user text-white" display-5></i> Manage Account
+         <a class="nav-link dropdown-toggle pink-text" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <i class="fas fa-user pink-text" display-5></i> Manage Account
           </a>
           <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
             <a class="dropdown-item text-primary" href="#"> <i class="fa fa-user" aria-hidden="true"></i> My Profile</a></a>
@@ -107,7 +107,7 @@ header('location: dashboard.php');
                     
                      <div class="row">
                         <div class="col-sm-12">
-                        <h5 class="white-text text-center">Uploaded Book Image.</h5>
+                        <h5 class="pink-text text-center" >Uploaded Book Image.</h5>
                         <hr>
                           <img  src="img/literature.webp" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"   alt="" style="padding-top: 100px">
                         </div>
@@ -115,38 +115,38 @@ header('location: dashboard.php');
                   
                  </div>
 
-                 <div class="col-md-9">
-                 <h4 class="card-title white-text text-center "> <i class="fas fa-book fa-2x green-text "></i><a> <strong> Add </strong>Book </a></h4>
+                <div class="col-md-9 ">
+                 <h4 class="card-title pink-text text-center " style="font-family: 'Varela Round', sans-serif;"> <i class="fas fa-book fa-1x -text "></i><a> <strong> Add </strong>Book </a></h4>
                  <hr>
-                     <form action="" method="post" class="wow slideInDown" style="padding-left: 100px">
+                     <form action="" method="post" class="wow slideInDown" style="padding-left: 100px;">
              
                      <div class="row">
                          <div class="col-sm-6">
 
                         <div class="form-group">
-                          <label for="" class=" white-text">I.S.B.N</label>
-                          <input type="text" name="isbn" id="" class="form-control" placeholder="Enter ISBN" aria-describedby="helpId">
+                          <label for="" class=" pink-text">I.S.B.N</label>
+                          <input type="text" name="isbn" id="" class="form-control rounded-pill" placeholder="Enter ISBN" aria-describedby="helpId">
                         </div>
 
                         <div class="form-group">
-                          <label for="" class=" white-text">Author Name</label>
-                          <input type="text" name="author" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <label for="" class=" pink-text">Author Name</label>
+                          <input type="text" name="author" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
                         </div>
                           
 
                         <div class="form-group">
-                          <label for="" class=" white-text">Book Title</label>
-                          <input type="text" name="booktitle" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <label for="" class=" pink-text">Book Title</label>
+                          <input type="text" name="booktitle" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
                         </div>
 
                           <div class="form-group">
-                          <label for="" class=" white-text">Category</label>
-                          <input type="text" name="category" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <label for="" class=" pink-text">Category</label>
+                          <input type="text" name="category" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
                           </div>
 
                           <div class="form-group">
-                          <label for="" class=" white-text">Country of Publishment</label>
-                          <input type="text" name="country" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <label for="" class=" pink-text">Country of Publishment</label>
+                          <input type="text" name="country" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
                         </div>
         
         
@@ -155,26 +155,26 @@ header('location: dashboard.php');
                          <div class="col-sm-6">
 
                         <div class="form-group">
-                          <label for="" class=" white-text">Publisher</label>
-                          <input type="text" name="publisher" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <label for="" class=" pink-text">Publisher</label>
+                          <input type="text" name="publisher" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
                         </div>
                     
                         <div class="form-group">
-                          <label for="" class=" white-text">Book Edition</label>
-                          <input type="text" name="edition" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <label for="" class=" pink-text">Book Edition</label>
+                          <input type="text" name="edition" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
                         </div>
                         
                         <div class="form-group">
-                          <label for="" class=" white-text">Google Book URL</label>
-                          <input type="text" name="google_url" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <label for="" class=" pink-text">Google Book URL</label>
+                          <input type="text" name="google_url" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
                         </div>
 
                         <div class="form-group">
-                          <label for="" class=" white-text">Price</label>
-                          <input type="text" name="price" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <label for="" class=" pink-text">Price</label>
+                          <input type="text" name="price" id="" class="form-control rounded-pill" placeholder="" aria-describedby="helpId">
                         </div>
                         
-                        <label for="" class=" white-text">Upload Image</label>
+                        <label for="" class=" pink-text">Upload Image</label>
                         <div class="input-group">
                         <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroupFileAddon01">Upload Book Image</span>
@@ -187,7 +187,7 @@ header('location: dashboard.php');
                         </div>
                         </div>
 
-                        <button type="submit" name="submit" class="btn btn-outline-white waves-effect rounded-pill btn-block">Add Book</button>
+                        <button type="submit" name="submit" class="btn btn-outline-pink waves-effect rounded-pill btn-block">Add Book</button>
                      </form>
                  </div>
              </div>
