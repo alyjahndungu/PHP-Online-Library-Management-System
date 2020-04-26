@@ -70,7 +70,7 @@ $result1 = mysqli_query($conn, $query);
   <h3 class="card-header text-center font-weight-bold text-uppercase py-4 wow fadeInDown pink-text" style="font-family: 'Varela Round', sans-serif;">AZAHUB- <span class="text-lowercase">View All Students</span></h3>
   <div class="card-body">
     <div id="table" class="table-editable">
-      <table class="table table-bordered table-responsive-md table-striped text-center">
+      <table class="table table-bordered table-responsive-md table-striped text-center"> 
         <thead>
           <tr>
           <th class="text-center text-secondary">ID</th>

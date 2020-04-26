@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
   </style>
     <title>Add Category</title>
 </head>
-<body style="background-color:slategray; font-family: 'Varela Round', sans-serif;">
+<body style="background-color:#f8f8fd; font-family: 'Varela Round', sans-serif;">
      <!--Navbar -->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark ">
   <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="120rem" width="100rem" alt=""> <span class="text-uppercase pink-text" style="padding-left: 400px"> <strong> Online Library Management System</strong></span> 
@@ -109,10 +109,10 @@ if (isset($_POST['submit'])) {
          <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col" class="text-warning">Category ID</th>
-                    <th scope="col" class="text-warning">Name</th>
-                    <th scope="col" class="text-warning">Edit Action</th>
-                    <th scope="col" class="text-warning">Delete Action</th>
+                    <th scope="col" class="pink-text">Category ID</th>
+                    <th scope="col" class="pink-text">Name</th>
+                    <th scope="col" class="pink-text">Edit Action</th>
+                    <th scope="col" class="pink-text">Delete Action</th>
                 </tr>
         </thead>
         <tbody>
@@ -125,9 +125,9 @@ if (isset($_POST['submit'])) {
                 <td class="text-info"><?php echo $row1[0];?></td>
                 <td class="text-info"><?php echo $row1[1];?></td>
                 <td> <span class="table-remove"><button type="button"
-                  class="btn btn-info btn-rounded btn-sm my-0 ">Edit</button></span></td>
+                  class="btn btn-info rounded-pill btn-sm my-0 ">Edit</button></span></td>
                   <td> <span class="table-remove"><button type="button"
-                  class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></span></td>
+                  class="btn btn-danger rounded-pill btn-sm my-0">Delete</button></span></td>
             </tr>
             <?php endwhile;?>
     </tbody>

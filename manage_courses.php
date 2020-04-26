@@ -33,10 +33,10 @@ if (isset($_POST['submit'])) {
   </style>
     <title>Manage Courses</title>
 </head>
-<body style="background-color:slategray">
+<body style="background-color:#f8f8fd">
      <!--Navbar -->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark ">
-  <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="120rem" width="100rem" alt=""> <span class="text-uppercase text-white" style="padding-left: 400px"> <strong> Online Library Management System</strong></span> 
+  <a class="navbar-brand black-text" href="#"> <img class="img-fluid" src="img/azahublogo.png" height="120rem" width="100rem" alt=""> <span class="text-uppercase pink-text" style="padding-left: 400px"> <strong> Online Library Management System</strong></span> 
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -44,8 +44,8 @@ if (isset($_POST['submit'])) {
     <div class="collapse navbar-collapse " id="navbarSupportedContent-333">
          <ul class="navbar-nav ml-auto nav-flex-icons">
          <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fas fa-user text-white" display-5></i> Manage Account
+         <a class="nav-link dropdown-toggle pink-text" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <i class="fas fa-user pink-text" display-5></i> Manage Account
           </a>
           <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
             <a class="dropdown-item text-primary" href="#"> <i class="fa fa-user" aria-hidden="true"></i> My Profile</a></a>
@@ -115,10 +115,10 @@ if (isset($_POST['submit'])) {
          <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col" class="text-warning">Course ID</th>
-                    <th scope="col" class="text-warning">Courses</th>
-                    <th scope="col" class="text-warning">Edit Action</th>
-                    <th scope="col" class="text-warning">Delete Action</th>
+                    <th scope="col" class="pink-text">Course ID</th>
+                    <th scope="col" class="pink-text">Courses</th>
+                    <th scope="col" class="pink-text">Edit Action</th>
+                    <th scope="col" class="pink-text">Delete Action</th>
                 </tr>
         </thead>
         <tbody>
@@ -131,9 +131,9 @@ if (isset($_POST['submit'])) {
                 <td class="text-info"><?php echo $row1[0];?></td>
                 <td class="text-info"><?php echo $row1[1];?></td>
                 <td> <span class="table-remove"><button type="button"
-                  class="btn btn-info btn-rounded btn-sm my-0 ">Edit</button></span></td>
+                  class="btn btn-info rounded-pill btn-sm my-0 ">Edit</button></span></td>
                   <td> <span class="table-remove"><button type="button"
-                  class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></span></td>
+                  class="btn btn-danger rounded-pill btn-sm my-0">Delete</button></span></td>
             </tr>
             <?php endwhile;?>
     </tbody>

@@ -41,13 +41,13 @@ if( $rows == 1 )
     <link rel="stylesheet" href="css/custom.css">
     <!--custom fonts-->
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
-    </style>
+@import url('https://fonts.googleapis.com/css?family=Barlow|Lato|Source+Code+Pro|Varela+Round&display=swap');
+</style>
     <title>O-Library Login</title>
     </title>
 </head>
 
-<body style="background-color: slategray">
+<body style="background-color:#f8f8fd; font-family: 'Varela Round', sans-serif;">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4"></div>
@@ -62,8 +62,8 @@ if( $rows == 1 )
             <div class="col-sm-4">
 
                 <!-- Default form login -->
-    <form class="text-center border border-warning p-5 wow rotateIn" method="post" action="login.php">
-    <p class="h4 mb-4 cyan-text text-uppercase">Sign in</p>
+    <form class="text-center border border-warning p-5 wow rubberBand" method="post" action="login.php">
+    <p class="h4 mb-4 pink-text text-uppercase">Sign in</p>
     <hr>
     <div class="form-group">
     <input type="text" name="_username" id=""  class="form-control my-4 rounded-pill text-center" placeholder=" Username" aria-describedby="helpId">
@@ -75,19 +75,19 @@ if( $rows == 1 )
                             <!-- Remember me -->
     <div class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-    <label class="custom-control-label white-text" for="defaultLoginFormRemember">Remember me</label>
+    <label class="custom-control-label pink-text" for="defaultLoginFormRemember">Remember me</label>
     </div>
     </div>
     <div>
             <!-- Forgot password -->
-    <a href="" class="lime-text">Forgot password?</a>
+    <a href="" class="cyan-text">Forgot password?</a>
     </div>
     </div>
     <!-- Sign in button -->
     <button class="btn btn-outline-cyan rounded-pill btn-block my-4" name="login" type="submit">Sign in</button>
     <!-- Register -->
-    <p class="white-text">Not a member?
-    <a href="register.php" class="lime-text">Register</a>
+    <p class="cyan-text">Not a member?
+    <a href="register.php" class="pink-text">Register</a>
     </p>
    </form>
         <!-- Default form login -->

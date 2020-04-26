@@ -52,19 +52,19 @@ if (isset($_POST['register'])) {
 <link rel="stylesheet" href="css/custom.css">
   <!--custom fonts-->
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
-  </style>
+@import url('https://fonts.googleapis.com/css?family=Barlow|Lato|Source+Code+Pro|Varela+Round&display=swap');
+</style>
   <title>Aza - Library Register</title>
   </title>
 </head>
 
-<body style="background-color: slategray">
+<body style="background-color:#f8f8fd; font-family: 'Varela Round', sans-serif;">
           <div class="container-fluid">
           <div class="row">
           <div class="col-sm-4"></div>
           <div class="col-sm-4">
           <hr>
-          <h1 class="text-center white-text"><strong>Create Account</strong> </h1>
+          <h1 class="text-center cyan-text"><strong>Create Account</strong> </h1>
           </div>
           <div class="col-sm-4"></div>
           </div>
@@ -99,8 +99,8 @@ if (isset($_POST['register'])) {
             Optional - for two step authentication
         </small>
         <!-- Sign up button -->
-        <button class="btn  my-4 btn-block btn-outline-purple rounded-pill wow shake" name="register" type="submit">Sign Up</button>
-        <p>Already Registered??</p> <a href="login.php" class="text-warning">Sign in here</a>
+        <button class="btn  my-4 btn-block btn-outline-cyan rounded-pill wow shake" name="register" type="submit">Sign Up</button>
+        <p class="cyan-text"> Already Registered??</p> <a href="login.php" class="pink-text">Sign in here</a>
 <hr>
 </form>
 <!-- Default form register -->
