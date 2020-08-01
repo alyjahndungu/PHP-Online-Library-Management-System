@@ -45,8 +45,8 @@
 
             <div class="card">
                <div class="card-body">
-                   <h5 class="card-title"><a> <strong>NAME :</strong> Azahub Online Library Management System</a></h5>
-                   <h5 class="card-title"><a> <strong>VERSiON :</strong> Aza 1.1.0 CRM</a></h5>
+                   <h5 class="card-title"><a> <strong>NAME :</strong> TernLibrary Management System</a></h5>
+                   <h5 class="card-title"><a> <strong>VERSiON :</strong> TRNLB 1.1.0 CRM</a></h5>
                    <h5 class="card-title"><a> <strong>DEVELOPER:</strong> Turnstone n Group</a></h5>
                    <h5 class="card-title"><a> <strong>DATE:</strong> February 2020</a></h5>
 
